@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     const header = document.querySelector("header");
 
-    window.addEventListener("scroll", function () {
+    window.addEventListener("scroll", function () { 
         if (window.scrollY > 50) {
             header.classList.add("header-scrolled");
         } else {
@@ -29,10 +29,10 @@ window.addEventListener('scroll', function () {
     let imagemHeader = this.document.getElementsByClassName('logoheader');
 
     if (window.scrollY > 50) {
-        imagemHeader[0].src = '/assets/icone-logo.png';
+        imagemHeader[0].src = '../assets/icone-logo.png';
         imagemHeader[0].style.opacity = '0.8';
     } else {
-        imagemHeader[0].src = '/assets/icone-logo-azulEscuro.png';
+        imagemHeader[0].src = '../assets/icone-logo-azulEscuro.png';
         imagemHeader[0].style.opacity = '0.8';
     }
 });

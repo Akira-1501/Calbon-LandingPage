@@ -25,7 +25,7 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-image: url("../assets/fundoofc.png");
+  background-image: url("../assets/fundo.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -84,7 +84,7 @@ span {
 
 .fale-conosco:hover {
   background-color: #267fa8;
-  color:var(--fundo-principal);
+  color: var(--fundo-principal);
   transition: 0.2s;
   transform: scale(1.02);
 }
@@ -97,7 +97,6 @@ span {
     gap: 2rem;
   }
 }
-
 /*----------------------------------------- ESCOPOS -----------------------------------------------------*/
 
 .escopos-section {
@@ -141,7 +140,7 @@ span {
   border: none;
   border-radius: 40px;
   background: #3c8abb45;
-  color:  rgb(253, 253, 253);
+  color: rgb(253, 253, 253);
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -155,16 +154,16 @@ span {
 }
 
 .tab.active {
-  background: #a7e5fc;
+  background: #B8FFFF;
   color: var(--fundo-principal);
   box-shadow: 0 4px 12px rgba(58, 18, 97, 0.3);
 }
 
 .escopos-content {
-  background: #89d8f6;
+  background: #B8FFFF;
   padding: 40px;
   border-radius: 20px;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
   text-align: left;
 }
 
@@ -182,6 +181,7 @@ span {
   margin-bottom: 15px;
   color: rgb(29, 12, 61);
 }
+
 .tab-content p {
   color: rgb(29, 12, 61);
 }
@@ -189,13 +189,19 @@ span {
 
 /* Responsividade */
 @keyframes fadeIn {
-  from {opacity: 0; transform: translateY(10px);}
-  to {opacity: 1; transform: translateY(0);}
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 
-/*---------------------------------------------- PLANOS ----------------------------------------------------*/
-
+/* /---------------------------------------------- PLANOS ----------------------------------------------------/ */
 .section-planos{
   padding: 80px 20px;
   text-align: center;
@@ -233,12 +239,14 @@ span {
   flex-direction: column;
   gap: 15px;
   border: 1px solid #afafaf1a;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.growth {
-  background: linear-gradient(15deg, rgba(106, 46, 109, 0.458), #07101c);
-  border: 2px solid #af67dc;
-  transform: scale(1.05);
+
+.card:hover {
+  transform: scale(1.05); 
+  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
 }
 
 .card h3 {
@@ -252,21 +260,35 @@ span {
 }
 
 .preco {
-  transition: transform 0.3s, color 0.3s;
   font-size: 2rem;
   font-weight: bold;
+  color: #cececf;
   margin: 10px 0;
+  transition: transform 0.3s ease;
+  transform-origin: left center;
 }
 
-.card:hover .preco{
-  transform: scale(1.1);
+.ST{
+  color: #4cafa5;
 }
+
+.GR{
+  color: #c29fff;
+}
+
+.ET{
+  color: #34c1d1;
+}
+
+.card:hover .preco {
+  transform: scale(1.10); 
+}
+
 
 .btn-preco {
   padding: 10px 20px;
   border: none;
   border-radius: 50px;
-  background-color: #4cafa5;
   color: #000000;
   cursor: pointer;
   transition: 0.3s;
@@ -285,8 +307,6 @@ span {
   color: #000000;
   cursor: pointer;
   transition: 0.3s;
-  background: #af67dc;
-  transform: scale(1.05);
 }
 
 .consulta {
@@ -297,7 +317,6 @@ span {
   cursor: pointer;
   transition: 0.3s;
   transform: scale(1.05);
-  background: #6bb2d0;
   transform: scale(1.05);
 }
 
@@ -315,25 +334,14 @@ span {
   position: relative;
   padding-left: 25px;
   margin-bottom: 10px;
-  color: #67bdeb;
+  color: #aaa;
 }
 
-.card ul li::before {
+.card ul li:before {
   content: '✔';
   position: absolute;
   left: 0;
-  color: #6bb2d0;
-}
-
-.popular {
-  color: black;
-  position: absolute;
-  top: -10px;
-  right: -10px;
-  background:#b48cfa;
-  padding: 5px 10px;
-  border-radius: 20px;
-  font-size: 0.8rem;
+  color: #aaa;
 }
 
 .titulo-verde {
@@ -357,7 +365,25 @@ span {
   }
 }
 
+
 /* Efeitos de expansão - Planos*/
+.cards-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Estilo base dos cards */
+.card {
+  transition: all 0.3s ease-in-out; 
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.cards-container:hover .card {
+  opacity: 0.5;             
+  filter: brightness(0.7);   
+}
+
 .card {
   transition: all 0.3s ease-in-out; 
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
@@ -366,6 +392,87 @@ span {
 .card:hover {
   transform: translateY(-10px) scale(1.05);
   box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+.starter:hover{
+  background: linear-gradient(15deg, rgba(29, 88, 79, 0.85), rgba(7, 16, 28, 0.85));
+  border: 2px solid #4cafa5;
+  transform: scale(1.05);
+}
+
+.starter .btn-preco {
+  background-color: rgba(112, 161, 203, 0.458); 
+  transition: 0.3s;
+}
+
+.starter:hover .btn-preco  {
+  background-color: #4cafa5;
+}
+
+.starter .btn-preco:hover {
+  background-color: #308880; 
+}
+
+.starter:hover ul li {
+  color: #63ecdf;
+}
+
+.starter:hover ul li::before {
+  color: #63ecdf;
+}
+
+.growth:hover {
+  background: linear-gradient(15deg, rgba(106, 46, 109, 0.458), #07101c);
+  border: 2px solid #af67dc;
+  transform: scale(1.05);
+}
+
+.growth .btn-popular {
+  background-color: rgba(112, 161, 203, 0.458); 
+  transition: 0.3s;
+}
+
+.growth:hover .btn-popular {
+  background-color: #af67dc;
+}
+
+.growth .btn-popular:hover {
+  background-color: rgb(139, 65, 157); 
+}
+
+.growth:hover ul li {
+  color: #cf9aef;
+}
+
+.growth:hover ul li::before {
+  color: #cf9aef;
+}
+
+.enterprise:hover{
+  background: linear-gradient(15deg, rgba(7, 66, 113, 0.85), rgba(7, 16, 28, 0.85));
+  border: 2px solid #67bdeb;
+  transform: scale(1.05);
+}
+
+.enterprise .consulta{
+  background-color: rgba(112, 161, 203, 0.458); 
+  transition: 0.3s;
+}
+
+.enterprise:hover .consulta{
+  background-color: #34c1d1;
+}
+
+.enterprise .consulta:hover{
+  background-color: #1c98a6;
+}
+
+.enterprise:hover ul li {
+  color: #6fe9f7;
+}
+
+.enterprise:hover ul li::before {
+  color: #6fe9f7;
 }
 
 .card h3 {
@@ -379,6 +486,17 @@ span {
 
 .btn:hover {
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+}
+
+.popular {
+  color: black;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background:#b48cfa;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.8rem;
 }
 
 .btn-popular {
@@ -397,4 +515,185 @@ span {
 
 .consulta:hover {
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* ----------------------------------- NOSSO TIME -------------------------------------------------*/
+.time-textos, .nosso-time {
+  color: white;
+}
+
+.time-textos h1{
+  font-size: 3rem;
+  margin-bottom: 10px;
+  color: #fff;
+  text-align: center;
+  align-items: center;
+}
+
+.time-textos p{
+  font-size: 1.1rem;
+  color: #888585;
+  margin-bottom: 40px;
+  text-align: center;
+  align-items: center;
+}
+
+.nosso-time {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto; /* Scroll horizontal */
+  gap: 30px;
+  padding: 40px;
+  scrollbar-width: none; /* Firefox */
+}
+
+.nosso-time::-webkit-scrollbar {
+  display: none; /* Chrome, Safari e Edge */
+}
+
+.card-componentes {
+  box-shadow: 0px 5px 15px rgb(15, 86, 107);
+  background: #0a1727;
+  min-width: 280px;
+  max-width: 320px;
+  padding: 25px 20px;
+  border-radius: 20px;
+  text-align: center;
+  flex-shrink: 0; /* Impede de encolher */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efeito hover no card */
+.card-componentes:hover {
+  transform: translateY(-10px) scale(1.05);
+}
+
+.card-componentes img {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.card-componentes h4 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 10px 0 5px;
+  color:white;
+}
+
+.foto-comp{
+  border-radius: 50%;
+}
+
+.card-componentes p {
+  font-size: 0.95rem;
+  color: rgb(176, 176, 176);
+  margin-bottom: 15px;
+}
+
+.card-componentes ul {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+.card-componentes li {
+  list-style: none;
+}
+
+.card-componentes ul img {
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.card-componentes ul img:hover {
+  transform: scale(1.2);
+}
+
+@media (max-width: 1024px) {
+  .time-textos h1 {
+    font-size: 2.5rem;
+  }
+  .time-textos p {
+    font-size: 0.95rem;
+  }
+  .card-componentes {
+    min-width: 240px;
+    max-width: 280px;
+    padding: 20px;
+  }
+  .card-componentes img {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+/* Celulares médios */
+@media (max-width: 768px) {
+  .time-textos h1 {
+    font-size: 3rem;
+  }
+  .time-textos p {
+    font-size: 0.9rem;
+  }
+  .nosso-time {
+    gap: 20px;
+    padding: 20px;
+    overflow-x: auto;   
+    overflow-y: hidden; 
+  }
+  .card-componentes {
+    min-width: 85%;  
+    max-width: 85%;  
+    padding: 18px;
+  }
+  .card-componentes img {
+    width: 70px;
+    height: 70px;
+  }
+  .card-componentes h4 {
+    font-size: 1rem;
+  }
+  .card-componentes p {
+    font-size: 0.85rem;
+  }
+}
+
+/* Celulares pequenos */
+@media (max-width: 480px) {
+  .time-textos h1 {
+    font-size: 1.5rem;
+  }
+  .time-textos p {
+    font-size: 0.8rem;
+  }
+  .nosso-time {
+    gap: 15px;
+    padding: 15px;
+  }
+  .card-componentes {
+    min-width: 100%;  /* ocupa toda a largura */
+    max-width: 100%;
+    padding: 15px;
+  }
+  .card-componentes img {
+    width: 60px;
+    height: 60px;
+  }
+  .card-componentes h4 {
+    font-size: 0.9rem;
+  }
+  .card-componentes p {
+    font-size: 0.75rem;
+  }
+  .card-componentes ul img {
+    width: 18px;
+    height: 18px;
+  }
 }
