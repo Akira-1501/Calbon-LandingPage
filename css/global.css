@@ -149,8 +149,12 @@ nav.lista-header ul li a:hover::after {
     color: var(--fundo-principal);
     width: 150px;
     border: none;
-    font-weight: bold;
+    font-size: 13px;
+    font-weight:500;
     transition: all 0.2s;
+    border-radius: 25px;
+    text-align: center;
+    padding: 5px;
 }
 
 .entrar:hover {
