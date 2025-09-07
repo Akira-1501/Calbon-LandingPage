@@ -166,6 +166,111 @@ nav.lista-header ul li a:hover::after {
     border-color: var(--destaque);
     box-shadow: 0 0 10px rgba(0, 150, 255, 0.6);
 }
+/* /-------------------------------------------------- BOLOFOFO ---------------------------------------------------/ */
+#bololo{
+  position: absolute;
+  top: 163rem;
+  width: 200px;
+  height: 200px;
+  right: 2rem;
+}
 
+/* /-------------------------------------------------- FOOTER ---------------------------------------------------/ */
+.footer {
+  background-color: #010817;
+  color: #fff;
+  padding: 60px 20px 20px;
+  margin-top: 80px;
+  font-family: "DM Sans", sans-serif;
+}
 
-/*-------------------------------------------------- FOOTER ---------------------------------------------------*/
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.footer-col {
+  flex: 1;
+  min-width: 220px;
+}
+
+.footer-logo {
+  width: 40px;
+  margin-bottom: 15px;
+}
+
+.footer-col h4 {
+  color: var(--destaque);
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+}
+
+.footer-col p {
+  color: #bbb;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 10px;
+  color: #bbb;
+  font-size: 0.9rem;
+}
+
+.footer-col ul li a {
+  color: #bbb;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-col ul li a:hover {
+  color: var(--destaque);
+}
+
+.social-icons a {
+  display: inline-block;
+  margin-right: 12px;
+  transition: transform 0.3s;
+}
+
+.social-icons img {
+  width: 24px;
+  height: 24px;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 0.8rem;
+  color: #777;
+  border-top: 1px solid #2a2a2a;
+  padding-top: 15px;
+  margin-top: 30px;
+}
+
+/* Responsividade */
+@media (max-width: 900px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .social-icons {
+    justify-content: center;
+    width: 50px;  
+    height: 50px; 
+  }
+}

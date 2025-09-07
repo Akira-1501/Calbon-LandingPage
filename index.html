@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/global.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+    </style>
+    <link rel="icon" href="../assets/icone-logo.png" type="image/icon">
+    <title>Calbon</title>
+</head>
+
+<body>
+    <!-------------------------------------------------- HEADER --------------------------------------------------->
+    <header>
+        <img class="logoheader" width="30" src="assets/icone-logo-azulEscuro.png" alt="icone-logo">
+        <nav class="lista-header">
+            <ul>
+                <li><a href="#" id="inic">Início</a></li>
+                <li><a href="#func" id="func">Funcionalidades</a></li>
+                <li><a href="#planos" id="plan">Planos</a></li>
+                <li><a href="#sobre" id="sobre">Sobre</a></li>
+            </ul>
+        </nav>
+        <div class="button-header">
+            <a href="login.html" target="_blank" class="entrar">Login</a>
+            <img id="perfil" width="25" src="/assets/loginpessoa.png" alt="perfil">
+        </div>
+
+    </header>
+
+    <!---------------------------------------------------------- MAIN ------------------------------------------------------->
+
+    <main>
+        <section class="main-content">
+            <div class="texto-main">
+                <h1>Conheça o <span id="calbon">Calbon!</span></h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua.</p>
+                <button class="fale-conosco" type="button">Fale conosco</button>
+            </div>
+            <div class="imagem-ceular">
+                <img src="ass" alt="">
+            </div>
+        </section>
+        
+
+        <!--------------------------------------------------- ESCOPOS ---------------------------------------------------------->
+
+        <section class="escopos-section">
+            <h2>Escopos de Emissão de <span>Carbono</span></h2>
+            <p class="subtitulo"> Entenda os três níveis de emissões de gases de efeito estufa e como eles impactam as
+                organizações.</p>
+
+            <div class="escopos-tabs">
+                <button class="tab active" data-tab="escopo1">Escopo 1</button>
+                <button class="tab" data-tab="escopo2">Escopo 2</button> <!--SE NECESSÁRIO trocar a classe "tab" -->
+                <button class="tab" data-tab="escopo3">Escopo 3</button>
+            </div>
+
+            <div class="escopos-content">
+                <div class="tab-content active" id="escopo1">
+                    <h3>Escopo 1 - Emissões Diretas</h3>
+                    <p>Emissões provenientes de fontes que pertencem ou são controladas pela organização, como veículos
+                        próprios, caldeiras, geradores e processos industriais.</p>
+                </div>
+
+                <div class="tab-content" id="escopo2">
+                    <h3>Escopo 2 - Emissões Indiretas de Energia</h3>
+                    <p>Emissões associadas à geração de energia elétrica, vapor, aquecimento e resfriamento adquiridos
+                        pela empresa de terceiros.</p>
+                </div>
+
+                <div class="tab-content" id="escopo3">
+                    <h3>Escopo 3 - Outras Emissões Indiretas</h3>
+                    <p>Inclui todas as outras emissões indiretas que ocorrem na cadeia de valor, como transporte de
+                        produtos, uso de bens vendidos, viagens a negócios e descarte de resíduos.</p>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <!-- --------------------------------------------- PLANOS ------------------------------------------------->
+
+    <section id="planos" class="section-planos">
+
+        <div class="container">
+            <h2>Nossos<span> Planos</span></h2>
+            <p class="subtitulo">Desbloqueie possibilidades infinitas</p>
+
+            <div class="planos-card">
+
+                <!-- Plano Starter  -->
+                <div class="card starter">
+                    <h3 class="titulo-verde">Starter</h3>
+                    <p>Máximo de 50 funcionários ativos.</p>
+                    <div class="preco"><span class="titulo-verde">R$</span><span class="ST">250</span></div>
+                    <button class="btn-preco">Comece agora</button>
+                    <ul>
+                        <li>para quem está começando a mapear seus fornecedores.</li>
+                    </ul>
+                </div>
+
+                <!-- Plano Growth -->
+                <div class="card growth">
+                    <span class="popular">Popular</span>
+                    <h3 class="titulo-lilas">Growth</h3>
+                    <p>Máximo de 150 funcionários ativos.</p>
+                    <div class="preco"><span class="titulo-lilas">R$</span><span class="GR">500</span></div>
+                    <button class="btn-popular">Comece agora</button>
+                    <ul>
+                        <li>Ideal para empresas em crescimento</li>
+                    </ul>
+                </div>
+
+                <!-- Plano enterprise -->
+                <div class="card enterprise">
+                    <h3 class="titulo-azul">Enterprise</h3>
+                    <p>Ilimitado + auditoria.</p>
+                    <div class="preco"><span class="ET">Sob consulta</span></div>
+                    <button class="btn consulta"><span></span>Entre em contato</button>
+                    <ul>
+                        <li>Para grandes organizações, com acesso ilimitado, auditorias completas e um plano sob medida
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    
+    <!--------------------------------------------------------------- NOSSO TIME ------------------------------->
+    <div class="time-textos">
+        <h1>Nosso <span>Time</span></h1>
+        <p>Conheça a equipe por trás do Calbon, dedicada a desenvolver soluções inovadoras para a gestão de emissões de
+            carbono.</p>
+    </div>
+    <section class="nosso-time">
+        <div class="card-componentes">
+            <img class="foto-comp" src="/componentes/Julia.jpeg" alt="img-julia">
+            <h4>Júlia Gonçalves</h4>
+            <p>Front-End Developer</p>
+            <ul>
+                <li><img src="/assets/linkedin.png" alt=""></li>
+                <li><img src="/assets/facebook.png" alt=""></li>
+                <li><img src="/assets/twitter.png" alt=""></li>
+                <li><img src="/assets/instagram.png" alt=""></li>
+            </ul>
+        </div>
+        <div class="card-componentes">
+            <img class="foto-comp" src="/componentes/Murilo.jpg" alt="img-murilo">
+            <h4>Murilo Escudeiro</h4>
+            <p>Excel</p>
+            <ul>
+                <li><img src="/assets/linkedin.png" alt=""></li>
+                <li><img src="/assets/facebook.png" alt=""></li>
+                <li><img src="/assets/twitter.png" alt=""></li>
+                <li><img src="/assets/instagram.png" alt=""></li>
+            </ul>
+        </div>
+        <div class="card-componentes">
+            <img class="foto-comp" src="/componentes/Laura.jpg" alt="img-laura">
+            <h4>Laura Gonçalves</h4>
+            <p>Análise de Dados</p>
+            <ul>
+                <li><img src="/assets/linkedin.png" alt=""></li>
+                <li><img src="/assets/facebook.png" alt=""></li>
+                <li><img src="/assets/twitter.png" alt=""></li>
+                <li><img src="/assets/instagram.png" alt=""></li>
+            </ul>
+        </div>
+        <div class="card-componentes">
+            <img class="foto-comp" src="/componentes/Eduardo.webp" alt="img-eduardo">
+            <h4>Eduardo Carbonaro</h4>
+            <p>Análise de Dados</p>
+            <ul>
+                <li><img src="/assets/linkedin.png" alt=""></li>
+                <li><img src="/assets/facebook.png" alt=""></li>
+                <li><img src="/assets/twitter.png" alt=""></li>
+                <li><img src="/assets/instagram.png" alt=""></li>
+            </ul>
+        </div>
+        <div class="card-componentes">
+            <img class="foto-comp" src="/componentes/Enzo.jpg" alt="img-enzo">
+            <h4>Enzo Neves</h4>
+            <p>Back-End Developer</p>
+            <ul>
+                <li><img src="/assets/linkedin.png" alt=""></li>
+                <li><img src="/assets/facebook.png" alt=""></li>
+                <li><img src="/assets/twitter.png" alt=""></li>
+                <li><img src="/assets/instagram.png" alt=""></li>
+            </ul>
+        </div>
+        <div class="card-componentes">
+            <img class="foto-comp" src="/componentes/Marcella.jpg" alt="img-marcella">
+            <h4>Marcella Alves</h4>
+            <p>Back-End Developer</p>
+            <ul>
+                <li><img src="/assets/linkedin.png" alt=""></li>
+                <li><img src="/assets/facebook.png" alt=""></li>
+                <li><img src="/assets/twitter.png" alt=""></li>
+                <li><img src="/assets/instagram.png" alt=""></li>
+            </ul>
+        </div>
+        <div class="card-componentes">
+            <img class="foto-comp" src="/componentes/Catarina.jpg" alt="img-catarina">
+            <h4>Catarina Bernardone</h4>
+            <p>Front-End Developer</p>
+            <ul>
+                <li><img src="/assets/linkedin.png" alt=""></li>
+                <li><img src="/assets/facebook.png" alt=""></li>
+                <li><img src="/assets/twitter.png" alt=""></li>
+                <li><img src="/assets/instagram.png" alt=""></li>
+            </ul>
+        </div>
+        <div class="card-componentes">
+            <img class="foto-comp" src="/componentes/Leonardo.jpg" alt="img-leonardo">
+            <h4>Leonardo Nakashima</h4>
+            <p>Back-End Developer</p>
+            <ul>
+                <li><img src="/assets/linkedin.png" alt=""></li>
+                <li><img src="/assets/facebook.png" alt=""></li>
+                <li><img src="/assets/twitter.png" alt=""></li>
+                <li><img src="/assets/instagram.png" alt=""></li>
+            </ul>
+        </div>
+        <div class="card-componentes">
+            <img class="foto-comp" src="/componentes/Rafael.png" alt="img-rafael">
+            <h4>Rafael Akira</h4>
+            <p>Full-Stack Developer</p>
+            <ul>
+                <li><img src="/assets/linkedin.png" alt=""></li>
+                <li><img src="/assets/facebook.png" alt=""></li>
+                <li><img src="/assets/twitter.png" alt=""></li>
+                <li><img src="/assets/instagram.png" alt=""></li>
+            </ul>
+        </div>
+        <div class="card-componentes">
+            <img class="foto-comp" src="/componentes/Levy.png" alt="img-levy">
+            <h4>Levy Lemos</h4>
+            <p>Análise de Dados</p>
+            <ul>
+                <li><img src="/assets/linkedin.png" alt=""></li>
+                <li><img src="/assets/facebook.png" alt=""></li>
+                <li><img src="/assets/twitter.png" alt=""></li>
+                <li><img src="/assets/instagram.png" alt=""></li>
+            </ul>
+        </div>
+        <div class="card-componentes">
+            <img class="foto-comp" src="/componentes/Petherson.png" alt="img-petherson">
+            <h4>Petherson Martins</h4>
+            <p>Front-End Developer</p>
+            <ul>
+                <li><img src="/assets/linkedin.png" alt=""></li>
+                <li><img src="/assets/facebook.png" alt=""></li>
+                <li><img src="/assets/twitter.png" alt=""></li>
+                <li><img src="/assets/instagram.png" alt=""></li>
+            </ul>
+        </div>
+        <div class="card-componentes">
+            <img class="foto-comp" src="/componentes/Allana.png" alt="img-allana">
+            <h4>Allana Abrego</h4>
+            <p>Análise de Dados</p>
+            <ul>
+                <li><img src="/assets/linkedin.png" alt=""></li>
+                <li><img src="/assets/facebook.png" alt=""></li>
+                <li><img src="/assets/twitter.png" alt=""></li>
+                <li><img src="/assets/instagram.png" alt=""></li>
+            </ul>
+        </div> 
+        <div class="card-componentes">
+            <img class="foto-comp" src="/componentes/Joyce.png" alt="img-joyce">
+            <h4>Joyce Santana</h4>
+            <p>Back-End Developer</p>
+            <ul>
+                <li><img src="/assets/linkedin.png" alt=""></li>
+                <li><img src="/assets/facebook.png" alt=""></li>
+                <li><img src="/assets/twitter.png" alt=""></li>
+                <li><img src="/assets/instagram.png" alt=""></li>
+            </ul>
+        </div>
+        <div class="card-componentes">
+            <img class="foto-comp" src="/componentes/Gabriel.png" alt="img-gabriel">
+            <h4>Gabriel Ferrari</h4>
+            <p>Análise de Dados</p>
+            <ul>
+                <li><img src="/assets/linkedin.png" alt=""></li>
+                <li><img src="/assets/facebook.png" alt=""></li>
+                <li><img src="/assets/twitter.png" alt=""></li>
+                <li><img src="/assets/instagram.png" alt=""></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-------------------------------------------------- FOOTER --------------------------------------------------->
+
+    <footer class="footer">
+        <div class="footer-container">
+
+            <!-- Coluna 1: Logo e descrição -->
+            <div class="footer-col">
+                <img src="/assets/icone-logo.png" alt="Calbon logo" class="footer-logo">
+                <p>Simplificando a gestão de carbono para empresas de todos os tamanhos.</p>
+            </div>
+
+            <!-- Coluna 2: Links -->
+            <div class="footer-col">
+                <h4>Links rápidos</h4>
+                <ul>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#func">Funcionalidades</a></li>
+                    <li><a href="#planos">Planos</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                </ul>
+            </div>
+
+            <!-- Coluna 3: Contato -->
+            <div class="footer-col">
+                <h4>Contato</h4>
+                <ul>
+                    <li>Email: contato@calbon.com</li>
+                    <li>Telefone: (11) 99999-9999</li>
+                    <li>São Paulo - Brasil</li>
+                </ul>
+            </div>
+
+            <!-- Coluna 4: Redes sociais -->
+            <div class="footer-col">
+                <h4>Siga-nos</h4>
+                <div class="social-icons">
+                    <a href="#"><img src="/assets/facebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="/assets/instagram.png" alt="Instagram"></a>
+                    <a href="#"><img src="/assets/linkedin.png" alt="LinkedIn"></a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Linha inferior -->
+        <div class="footer-bottom">
+            <p>© 2025 Calbon. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    <script src="/html/script.js" defer></script>
+</body>
+
+</html>
