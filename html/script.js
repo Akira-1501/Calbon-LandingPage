@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     const header = document.querySelector("header");
 
-    window.addEventListener("scroll", function () {
+    window.addEventListener("scroll", function () { 
         if (window.scrollY > 50) {
             header.classList.add("header-scrolled");
         } else {
@@ -25,27 +25,25 @@ tabs.forEach(tab => {
     });
 });
 
+// window.addEventListener('scroll', function () {
+//     let imagemHeader = this.document.getElementsByClassName('logoheader');
+
+//     if (window.scrollY > 50) {
+//         imagemHeader[0].src = '../assets/icone-logo.png';
+//         imagemHeader[0].style.opacity = '0.8';
+//     } else {
+//         imagemHeader[0].src = '../assets/icone-logo-azulEscuro.png';
+//         imagemHeader[0].style.opacity = '0.8';
+//     }
+// });
+
 window.addEventListener('scroll', () => {
-    const ulList = document.getElementById('ul-list');
-    if (!ulList) return; // se não existe, não faz nada
+    let ulList = this.document.getElementById('ul-list');
 
     if (window.scrollY > 50) {
         ulList.classList.add('ul-list-scrolled');
-    } else {
-        ulList.classList.remove('ul-list-scrolled');
     }
-});
-
-document.addEventListener("DOMContentLoaded", function () {
-  const tabButtons = document.querySelectorAll('.tab-time');
-  const tabContents = document.querySelectorAll('.tab-content-time');
-
-  tabButtons.forEach(btn => {
-    btn.addEventListener('click', function () {
-      tabButtons.forEach(b => b.classList.remove('active'));
-      tabContents.forEach(tc => tc.classList.remove('active'));
-      this.classList.add('active');
-      document.getElementById(this.dataset.tab).classList.add('active');
-    });
-  });
+    else {
+        ulList.classLit.remove('ul-list-scrolled');
+    }
 });

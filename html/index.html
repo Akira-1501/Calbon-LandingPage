@@ -6,37 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/global.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
-    </style>
-
-    <style>
         @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
     </style>
-    <link rel="icon" href="../imgl/icone-logo.png" type="image/icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="icon" href="../assets/icone-logo.png" type="image/icon">
     <title>Calbon</title>
 </head>
-
 <body>
     <!-------------------------------------------------- HEADER --------------------------------------------------->
     <header>
-        <img class="logoheader" width="35" src="/imgl/icone-logo.png" alt="icone-logo">
+        <img class="logoheader" width="30" src="/imgl/icone-logo.png" alt="icone-logo">
         <nav class="lista-header">
             <ul>
                 <li><a href="#" id="inic">Início</a></li>
                 <li><a href="#func" id="func">Funcionalidades</a></li>
                 <li><a href="#planos" id="plan">Planos</a></li>
-                <li><a href="#sobre" id="sob">Sobre</a></li>
-
+                <li><a href="#sobre" id="sobre">Sobre</a></li>
             </ul>
         </nav>
         <div class="button-header">
-            <button class="entrar" type="button">Login</button>
-            <img id="perfil" width="25" src="/imgl/loginpessoa.png" alt="perfil">
+            <a href="login.html" target="_blank" class="entrar">Login</a>
+            <img id="perfil" width="25" src="/assets/loginpessoa.png" alt="perfil">
         </div>
     </header>
 
-    <!-------------------------------------------------- MAIN ------------------------------------------------------->
+    <!---------------------------------------------------------- MAIN ------------------------------------------------------->
 
     <main>
         <section class="main-content">
@@ -44,75 +42,101 @@
                 <h1>Conheça o <span id="calbon">Calbon!</span></h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
                     et dolore magna aliqua.</p>
-                <div class="botoes-main">
-                    <button class="fale-conosco" type="button">Fale conosco</button>
-                    <button class="saiba-mais" type="button">Saiba Mais</button>
-                </div>
+                <button class="fale-conosco" type="button">Fale conosco</button>
             </div>
-            <div class="imagem_main">
-                <img src="/imgl/celular.png" alt="imagem-main">
+            <div class="imagem-ceular">
+                <img width="500" src="/imgl/celulares2.png" alt="celular">  
             </div>
-
         </section>
+        <!--------------------------------------------------- ESCOPOS ---------------------------------------------------------->
 
-        <!-------------------------------------------------- SOBRE --------------------------------------------------->
-        <section id="sobre" class="sobre-section">
-            <div class="sobre-container">
-                <div class="sobre-texto">
-                    <h2>Sobre o <span>Calbon</span></h2>
-                    <p>
-                        O <strong>Calbon</strong> é uma plataforma inovadora que ajuda empresas a medir, monitorar e
-                        reduzir suas
-                        emissões de carbono. Nossa missão é simplificar a gestão climática, permitindo que organizações
-                        de todos os
-                        tamanhos alcancem suas metas de sustentabilidade de forma prática e eficiente.
-                    </p>
-                    <p>
-                        Com ferramentas inteligentes e relatórios detalhados, conectamos negócios à economia de baixo
-                        carbono,
-                        impulsionando competitividade e impacto positivo para o planeta.
-                    </p>
+        <section class="escopos-section">
+            <h2>Escopos de Emissão de <span>Carbono</span></h2>
+            <p class="subtitulo"> Entenda os três níveis de emissões de gases de efeito estufa e como eles impactam as
+                organizações.</p>
+
+            <div class="escopos-tabs">
+                <button class="tab active" data-tab="escopo1">Escopo 1</button>
+                <button class="tab" data-tab="escopo2">Escopo 2</button> <!--SE NECESSÁRIO trocar a classe "tab" -->
+                <button class="tab" data-tab="escopo3">Escopo 3</button>
+            </div>
+
+            <div class="escopos-content">
+                <div class="tab-content active" id="escopo1">
+                    <h3>Escopo 1 - Emissões Diretas</h3>
+                    <p>Emissões provenientes de fontes que pertencem ou são controladas pela organização, como veículos
+                        próprios, caldeiras, geradores e processos industriais.</p>
                 </div>
+
+                <div class="tab-content" id="escopo2">
+                    <h3>Escopo 2 - Emissões Indiretas de Energia</h3>
+                    <p>Emissões associadas à geração de energia elétrica, vapor, aquecimento e resfriamento adquiridos
+                        pela empresa de terceiros.</p>
+                </div>
+
+                <div class="tab-content" id="escopo3">
+                    <h3>Escopo 3 - Outras Emissões Indiretas</h3>
+                    <p>Inclui todas as outras emissões indiretas que ocorrem na cadeia de valor, como transporte de
+                        produtos, uso de bens vendidos, viagens a negócios e descarte de resíduos.</p>
+                </div>
+
             </div>
         </section>
     </main>
-
-    <!--------------------------------------------------- ESCOPOS ---------------------------------------------------------->
-
-    <section class="escopos-section">
-        <h2>Escopos de Emissão de <span>Carbono</span></h2>
-        <p class="subtitulo"> Entenda os três níveis de emissões de gases de efeito estufa e como eles impactam as
-            organizações.</p>
-
-        <div class="escopos-tabs">
-            <button class="tab active" data-tab="escopo1">Escopo 1</button>
-            <button class="tab" data-tab="escopo2">Escopo 2</button> <!--SE NECESSÁRIO trocar a classe "tab" -->
-            <button class="tab" data-tab="escopo3">Escopo 3</button>
-        </div>
-
-        <div class="escopos-content">
-            <div class="tab-content active" id="escopo1">
-                <h3>Escopo 1 - Emissões Diretas</h3>
-                <p>Emissões provenientes de fontes que pertencem ou são controladas pela organização, como veículos
-                    próprios, caldeiras, geradores e processos industriais.</p>
-            </div>
-
-            <div class="tab-content" id="escopo2">
-                <h3>Escopo 2 - Emissões Indiretas de Energia</h3>
-                <p>Emissões associadas à geração de energia elétrica, vapor, aquecimento e resfriamento adquiridos
-                    pela empresa de terceiros.</p>
-            </div>
-
-            <div class="tab-content" id="escopo3">
-                <h3>Escopo 3 - Outras Emissões Indiretas</h3>
-                <p>Inclui todas as outras emissões indiretas que ocorrem na cadeia de valor, como transporte de
-                    produtos, uso de bens vendidos, viagens a negócios e descarte de resíduos.</p>
-            </div>
-
-        </div>
-    </section>
-
     
+  <section class="funcionalidades">
+    <h2>Funcionalidades<span>:</span></h2>
+    
+    <!-- EMPRESAS CONTRATANTES -->
+    <div class="bloco">
+      <p class="subtitulo">PARA EMPRESAS CONTRATANTES</p>
+      <div class="grid">
+        <div class="card">
+          <i data-lucide="bar-chart-2" class="icon"></i>
+          <h3>Dashboard e Visualização</h3>
+        </div>
+        <div class="card">
+          <i data-lucide="file-text" class="icon"></i>
+          <h3>Geração de Relatórios</h3>
+        </div>
+        <div class="card">
+          <i data-lucide="shield-check" class="icon"></i>
+          <h3>Gestão de Compliance</h3>
+        </div>
+        <div class="card">
+          <i data-lucide="clipboard-list" class="icon"></i>
+          <h3>Envio de Formulários</h3>
+        </div>
+        <div class="card destaque">
+          <i data-lucide="cloud-rain" class="icon"></i>
+          <h3>Cálculo Automático Escopo 3</h3>
+        </div>
+      </div>
+    </div>
+
+    <!-- COLABORADORES -->
+    <div class="bloco">
+      <p class="subtitulo">PARA COLABORADORES</p>
+      <div class="grid">
+        <div class="card">
+          <i data-lucide="monitor" class="icon"></i>
+          <h3>Portal Web Responsivo</h3>
+        </div>
+        <div class="card">
+          <i data-lucide="form-input" class="icon"></i>
+          <h3>Formulário Guiado</h3>
+        </div>
+        <div class="card">
+          <i data-lucide="trending-up" class="icon"></i>
+          <h3>Histórico e Comparação</h3>
+        </div>
+      </div>
+    </div>
+
+  </section>
+   <script>
+    lucide.createIcons();
+  </script>
     <!-- --------------------------------------------- PLANOS ------------------------------------------------->
 
     <section id="planos" class="section-planos">
@@ -139,7 +163,7 @@
                     <span class="popular">Popular</span>
                     <h3 class="titulo-lilas">Growth</h3>
                     <p>Máximo de 150 funcionários ativos.</p>
-                    <div class="preco""><span class=" titulo-lilas">R$</span><span class="GR">500</span></div>
+                    <div class="preco"><span class="titulo-lilas">R$</span><span class="GR">500</span></div>
                     <button class="btn-popular">Comece agora</button>
                     <ul>
                         <li>Ideal para empresas em crescimento</li>
@@ -162,7 +186,9 @@
         </div>
     </section>
 
-<!--------------------------------------------------------------- NOSSO TIME ------------------------------->
+
+    
+    <!--------------------------------------------------------------- NOSSO TIME ------------------------------->
     <div class="time-textos">
         <h1>Nosso <span>Time</span></h1>
         <p>Conheça a equipe por trás do Calbon, dedicada a desenvolver soluções inovadoras para a gestão de emissões de
@@ -174,10 +200,10 @@
             <h4>Júlia Gonçalves</h4>
             <p>Front-End Developer</p>
             <ul>
-                <li><img src="/assets/linkedin.png" alt=""></li>
-                <li><img src="/assets/facebook.png" alt=""></li>
-                <li><img src="/assets/twitter.png" alt=""></li>
-                <li><img src="/assets/instagram.png" alt=""></li>
+                <li><i class="fab fa-facebook"></i></li>
+                <li><i class="fab fa-twitter"></i></li>
+                <li><i class="fab fa-instagram"></i></li>
+                <li><i class="fab fa-linkedin"></i></li>
             </ul>
         </div>
         <div class="card-componentes">
@@ -185,10 +211,10 @@
             <h4>Murilo Escudeiro</h4>
             <p>Excel</p>
             <ul>
-                <li><img src="/assets/linkedin.png" alt=""></li>
-                <li><img src="/assets/facebook.png" alt=""></li>
-                <li><img src="/assets/twitter.png" alt=""></li>
-                <li><img src="/assets/instagram.png" alt=""></li>
+                <li><i class="fab fa-facebook"></i></li>
+                <li><i class="fab fa-twitter"></i></li>
+                <li><i class="fab fa-instagram"></i></li>
+                <li><i class="fab fa-linkedin"></i></li>
             </ul>
         </div>
         <div class="card-componentes">
@@ -196,10 +222,10 @@
             <h4>Laura Gonçalves</h4>
             <p>Análise de Dados</p>
             <ul>
-                <li><img src="/assets/linkedin.png" alt=""></li>
-                <li><img src="/assets/facebook.png" alt=""></li>
-                <li><img src="/assets/twitter.png" alt=""></li>
-                <li><img src="/assets/instagram.png" alt=""></li>
+                <li><i class="fab fa-facebook"></i></li>
+                <li><i class="fab fa-twitter"></i></li>
+                <li><i class="fab fa-instagram"></i></li>
+                <li><i class="fab fa-linkedin"></i></li>
             </ul>
         </div>
         <div class="card-componentes">
@@ -207,10 +233,10 @@
             <h4>Eduardo Carbonaro</h4>
             <p>Análise de Dados</p>
             <ul>
-                <li><img src="/assets/linkedin.png" alt=""></li>
-                <li><img src="/assets/facebook.png" alt=""></li>
-                <li><img src="/assets/twitter.png" alt=""></li>
-                <li><img src="/assets/instagram.png" alt=""></li>
+                <li><i class="fab fa-facebook"></i></li>
+                <li><i class="fab fa-twitter"></i></li>
+                <li><i class="fab fa-instagram"></i></li>
+                <li><i class="fab fa-linkedin"></i></li>
             </ul>
         </div>
         <div class="card-componentes">
@@ -218,10 +244,10 @@
             <h4>Enzo Neves</h4>
             <p>Back-End Developer</p>
             <ul>
-                <li><img src="/assets/linkedin.png" alt=""></li>
-                <li><img src="/assets/facebook.png" alt=""></li>
-                <li><img src="/assets/twitter.png" alt=""></li>
-                <li><img src="/assets/instagram.png" alt=""></li>
+                <li><i class="fab fa-facebook"></i></li>
+                <li><i class="fab fa-twitter"></i></li>
+                <li><i class="fab fa-instagram"></i></li>
+                <li><i class="fab fa-linkedin"></i></li>
             </ul>
         </div>
         <div class="card-componentes">
@@ -229,10 +255,10 @@
             <h4>Marcella Alves</h4>
             <p>Back-End Developer</p>
             <ul>
-                <li><img src="/assets/linkedin.png" alt=""></li>
-                <li><img src="/assets/facebook.png" alt=""></li>
-                <li><img src="/assets/twitter.png" alt=""></li>
-                <li><img src="/assets/instagram.png" alt=""></li>
+                <li><i class="fab fa-facebook"></i></li>
+                <li><i class="fab fa-twitter"></i></li>
+                <li><i class="fab fa-instagram"></i></li>
+                <li><i class="fab fa-linkedin"></i></li>
             </ul>
         </div>
         <div class="card-componentes">
@@ -240,10 +266,10 @@
             <h4>Catarina Bernardone</h4>
             <p>Front-End Developer</p>
             <ul>
-                <li><img src="/assets/linkedin.png" alt=""></li>
-                <li><img src="/assets/facebook.png" alt=""></li>
-                <li><img src="/assets/twitter.png" alt=""></li>
-                <li><img src="/assets/instagram.png" alt=""></li>
+                <li><i class="fab fa-facebook"></i></li>
+                <li><i class="fab fa-twitter"></i></li>
+                <li><i class="fab fa-instagram"></i></li>
+                <li><i class="fab fa-linkedin"></i></li>
             </ul>
         </div>
         <div class="card-componentes">
@@ -251,10 +277,10 @@
             <h4>Leonardo Nakashima</h4>
             <p>Back-End Developer</p>
             <ul>
-                <li><img src="/assets/linkedin.png" alt=""></li>
-                <li><img src="/assets/facebook.png" alt=""></li>
-                <li><img src="/assets/twitter.png" alt=""></li>
-                <li><img src="/assets/instagram.png" alt=""></li>
+                <li><i class="fab fa-facebook"></i></li>
+                <li><i class="fab fa-twitter"></i></li>
+                <li><i class="fab fa-instagram"></i></li>
+                <li><i class="fab fa-linkedin"></i></li>
             </ul>
         </div>
         <div class="card-componentes">
@@ -262,10 +288,10 @@
             <h4>Rafael Akira</h4>
             <p>Full-Stack Developer</p>
             <ul>
-                <li><img src="/assets/linkedin.png" alt=""></li>
-                <li><img src="/assets/facebook.png" alt=""></li>
-                <li><img src="/assets/twitter.png" alt=""></li>
-                <li><img src="/assets/instagram.png" alt=""></li>
+                <li><i class="fab fa-facebook"></i></li>
+                <li><i class="fab fa-twitter"></i></li>
+                <li><i class="fab fa-instagram"></i></li>
+                <li><i class="fab fa-linkedin"></i></li>
             </ul>
         </div>
         <div class="card-componentes">
@@ -273,10 +299,10 @@
             <h4>Levy Lemos</h4>
             <p>Análise de Dados</p>
             <ul>
-                <li><img src="/assets/linkedin.png" alt=""></li>
-                <li><img src="/assets/facebook.png" alt=""></li>
-                <li><img src="/assets/twitter.png" alt=""></li>
-                <li><img src="/assets/instagram.png" alt=""></li>
+                <li><i class="fab fa-facebook"></i></li>
+                <li><i class="fab fa-twitter"></i></li>
+                <li><i class="fab fa-instagram"></i></li>
+                <li><i class="fab fa-linkedin"></i></li>
             </ul>
         </div>
         <div class="card-componentes">
@@ -284,10 +310,10 @@
             <h4>Petherson Martins</h4>
             <p>Front-End Developer</p>
             <ul>
-                <li><img src="/assets/linkedin.png" alt=""></li>
-                <li><img src="/assets/facebook.png" alt=""></li>
-                <li><img src="/assets/twitter.png" alt=""></li>
-                <li><img src="/assets/instagram.png" alt=""></li>
+                <li><i class="fab fa-facebook"></i></li>
+                <li><i class="fab fa-twitter"></i></li>
+                <li><i class="fab fa-instagram"></i></li>
+                <li><i class="fab fa-linkedin"></i></li>
             </ul>
         </div>
         <div class="card-componentes">
@@ -295,10 +321,10 @@
             <h4>Allana Abrego</h4>
             <p>Análise de Dados</p>
             <ul>
-                <li><img src="/assets/linkedin.png" alt=""></li>
-                <li><img src="/assets/facebook.png" alt=""></li>
-                <li><img src="/assets/twitter.png" alt=""></li>
-                <li><img src="/assets/instagram.png" alt=""></li>
+                <li><i class="fab fa-facebook"></i></li>
+                <li><i class="fab fa-twitter"></i></li>
+                <li><i class="fab fa-instagram"></i></li>
+                <li><i class="fab fa-linkedin"></i></li>
             </ul>
         </div> 
         <div class="card-componentes">
@@ -306,10 +332,10 @@
             <h4>Joyce Santana</h4>
             <p>Back-End Developer</p>
             <ul>
-                <li><img src="/assets/linkedin.png" alt=""></li>
-                <li><img src="/assets/facebook.png" alt=""></li>
-                <li><img src="/assets/twitter.png" alt=""></li>
-                <li><img src="/assets/instagram.png" alt=""></li>
+                <li><i class="fab fa-facebook"></i></li>
+                <li><i class="fab fa-twitter"></i></li>
+                <li><i class="fab fa-instagram"></i></li>
+                <li><i class="fab fa-linkedin"></i></li>
             </ul>
         </div>
         <div class="card-componentes">
@@ -317,24 +343,22 @@
             <h4>Gabriel Ferrari</h4>
             <p>Análise de Dados</p>
             <ul>
-                <li><img src="/assets/linkedin.png" alt=""></li>
-                <li><img src="/assets/facebook.png" alt=""></li>
-                <li><img src="/assets/twitter.png" alt=""></li>
-                <li><img src="/assets/instagram.png" alt=""></li>
+                <li><i class="fab fa-facebook"></i></li>
+                <li><i class="fab fa-twitter"></i></li>
+                <li><i class="fab fa-instagram"></i></li>
+                <li><i class="fab fa-linkedin"></i></li>
             </ul>
         </div>
     </section>
 
     <!-------------------------------------------------- FOOTER --------------------------------------------------->
-    <div class="boneco">
-        <img id="bololo" src="/imgl/Group 174.png" alt="">
-    </div>
+
     <footer class="footer">
         <div class="footer-container">
 
             <!-- Coluna 1: Logo e descrição -->
             <div class="footer-col">
-                <img src="/imgl/icone-logo.png" alt="Calbon logo" class="footer-logo">
+                <img src="/assets/icone-logo.png" alt="Calbon logo" class="footer-logo">
                 <p>Simplificando a gestão de carbono para empresas de todos os tamanhos.</p>
             </div>
 
@@ -363,11 +387,12 @@
             <div class="footer-col">
                 <h4>Siga-nos</h4>
                 <div class="social-icons">
-                    <a href="#"><img src="/imgl/icone-face.png" alt="Facebook"></a>
-                    <a href="#"><img src="/imgl/icone-insta.png" alt="Instagram"></a>
-                    <a href="#"><img src="/imgl/icone-link.png" alt="LinkedIn"></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
             </div>
+
         </div>
 
         <!-- Linha inferior -->
@@ -375,7 +400,6 @@
             <p>© 2025 Calbon. Todos os direitos reservados.</p>
         </div>
     </footer>
-
-    <script src="/html/script.js" defer></script>
-</html>
+    <script src="script.js" defer></script>
 </body>
+</html>
