@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Área Administrativa – Editando</title>
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/editar.css" />
+  <link rel="icon" href="/LandingPage/icone-logo.ico" type="image/icon" />
+</head>
+<body>
+
+  <header>
+    <button onclick="location.href='home.html'" class="logo-btn">
+      <img src="img/icone-logo.png" alt="Logo Calbon" class="logo-img" />
+    </button>
+  </header>
+  
+  <aside class="sidebar">
+    <ul>
+      <!-- <a href="home.html" class="sidebar-item">
+        <img src="img/icone-home.png" alt="Home" class="icon-img">
+        <span class="label">Home</span>
+      </a> -->
+      <a href="visualizar.html" class="sidebar-item">
+        <img src="img/icone-tabela.png" alt="Visualizar" class="icon-img">Visualizar
+        <span class="label">Visualizar</span>
+      </a>
+      <a href="inserir.html" class="sidebar-item">
+        <img src="img/icone-adicionar.png" alt="Inserir" class="icon-img">Inserir
+        <span class="label">Inserir</span>
+      </a>
+      <a href="dashboard.html" class="sidebar-item">
+        <img src="img/icone-grafico.png" alt="Dashboard" class="icon-img">Dashboard
+        <span class="label">Dashboard</span>
+      </a>
+    </ul>
+
+    <hr class="divisao-aside" />
+    <button id="back-btn">
+      <img src="img/icone-sair.png" alt="Voltar" class="icon-img" />
+      <span class="label">Voltar</span>
+    </button>
+  </aside>
+
+  <main>
+    <div class="title-container">
+      <div class="title-row">
+        <img src="img/icone-editar.png" alt="Ícone Editar" class="title-icon" />
+        <span class="separator">|</span>
+        <h1 class="titulo">Editar Funcionário</h1>
+      </div>
+      <p class="subtitulo">Altere os dados abaixo para atualizar o funcionário:</p>
+    </div>
+
+    <form id="formEditarFuncionario" class="formulario">
+      <div class="coluna-esquerda">
+        <div class="form-group">
+          <label for="numero_cracha">Número do Crachá</label>
+          <input type="text" id="numero_cracha" name="numero_cracha" readonly />
+        </div>
+
+        <div class="form-group">
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" name="nome" required />
+        </div>
+
+        <div class="form-group">
+          <label for="sobrenome">Sobrenome</label>
+          <input type="text" id="sobrenome" name="sobrenome" required />
+        </div>
+
+        <div class="form-group">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" required readonly />
+        </div>
+      </div>
+
+      <div class="coluna-direita">
+        <div class="form-group">
+          <label for="cargo_id">Cargo</label>
+          <select id="cargo_id" name="cargo_id" required>
+            <option value="" disabled>Selecione o cargo</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="localizacao_id">Localização</label>
+          <select id="localizacao_id" name="localizacao_id" required>
+            <option value="" disabled>Selecione a localização</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="senha_hash">Senha</label>
+          <input type="password" id="senha_hash" name="senha_hash" required />
+        </div>
+      </div>
+
+      <div class="botoes-form">
+        <button type="submit" class="btn-padrao">Salvar</button>
+        <button type="button" id="btnCancelar" class="btn-padrao cancelar">Cancelar</button>
+      </div>
+    </form>
+  </main>
+
+  <script src="js/editar.js"></script>
+</body>
+</html>
