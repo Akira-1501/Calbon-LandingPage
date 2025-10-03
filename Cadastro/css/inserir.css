@@ -1,5 +1,8 @@
+body{
+  background-color: #ffffff;
+}
 main{
-  margin-left: 200px;
+  margin-left: 260px;
 }
 
 .title-container {
@@ -170,10 +173,8 @@ main{
   }
 }
 
-.logo-img{
-  margin-left: 20px;
-  margin-top: 5px;
-  width: 40px;
+/* .logo-img{
+display: none;
   
-}
+} */
 
