@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Editar Funcionário | Painel Administrativo</title>
+  <link rel="stylesheet" href="/AreaRestrita/css/layout.css" />
+  <link rel="stylesheet" href="/AreaRestrita/css/editar.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="icon" href="/AreaRestrita/img/icone-logo.ico" type="image/icon" />
+</head>
+<body>
+  <!---------------------------------------------------- BARRA LATERAL  -------------------------------------------------------->
+  <aside class="sidebar">
+    <ul>
+      <a href="/AreaRestrita/inicio.html" class="sidebar-item active">
+        <i class="fas fa-home icon-img"></i> Início
+        <span class="label">Início</span>
+      </a>
+
+      <a href="/AreaRestrita/visualizar-empresa.html" class="sidebar-item">
+        <i class="fa-solid fa-building"></i>Empresas
+        <span class="label">Visualizar</span>
+      </a>
+
+      <a href="/AreaRestrita/visualizar-funcionario.html" class="sidebar-item">
+        <i class="fa-solid fa-people-group"></i> Funcionários
+        <span class="label">Visualizar</span>
+      </a>
+
+      <a href="/AreaRestrita/inserir.html" class="sidebar-item">
+        <i class="fas fa-plus icon-img"></i> Inserir
+        <span class="label">Inserir</span>
+      </a>
+
+      <a href="/AreaRestrita/editar.html" class="sidebar-item">
+        <i class="fa fa-pen icon-img"></i> Editar
+        <span class="label">Editar</span>
+      </a>
+
+    </ul>
+    <hr class="divisao-aside">
+    <a href="/LandingPage/index.html" class="sidebar-item">
+      <i class="fas fa-right-from-bracket icon-img"></i>
+    </a>
+
+  </aside>
+
+  <!------------------------------------------------------------ MAIN - FORMULÁRIO DE EDIÇÃO --------------------------------------------------------------->
+  <main>
+    <!-- Área de mensagens -->
+    <div class="area-mensagens" aria-live="polite"></div>
+
+    <!-- Card do formulário -->
+    <section class="formulario-funcionario">
+      <div class="cabecalho">
+
+        <div class="titulo">
+          <i class="fas fa-user-edit icone-titulo"></i>
+          <h1 >Editar Funcionário</h1>
+        </div>
+        <a  class="fechar" href="/AreaRestrita/inicio.html"> <i class="fas fa-times"></i></a>
+      </div>
+
+      <form class="formulario" id="formEditarFuncionario" >
+        <input type="hidden" id="funcionario_id" name="funcionario_id" />
+
+        <div class="grid-campos">
+          <div class="campo">
+            <label for="numero_cracha" class="label">Número do Crachá</label>
+            <div class="input-container">
+              <i class="fas fa-id-badge icone-campo"></i>
+              <input type="text" id="numero_cracha" name="numero_cracha" class="input"
+                placeholder="Gerado automaticamente" />
+            </div>
+            <div class="mensagem-erro" id="erro-numero_cracha"></div>
+          </div>
+
+          <!-- Campo Nome -->
+          <div class="campo">
+            <label for="nome" class="label">Nome Completo <span class="obrigatorio">*</span></label>
+            <div class="input-container">
+              <i class="fas fa-user icone-campo"></i>
+              <input type="text" id="nome" name="nome" class="input" required aria-required="true"
+                placeholder="Digite o nome completo" />
+            </div>
+            <div class="mensagem-erro" id="erro-nome"></div>
+          </div>
+
+          <!-- Campo Cargo -->
+          <div class="campo">
+            <label for="cargo" class="label">Cargo <span class="obrigatorio">*</span></label>
+            <div class="input-container">
+              <i class="fas fa-briefcase icone-campo"></i>
+              <select id="cargo" name="cargo" class="select" required aria-required="true">
+                <option value="">Selecione o cargo</option>
+                <option value="Gerente">Gerente</option>
+                <option value="Desenvolvedor">Desenvolvedor</option>
+                <option value="Analista">Analista</option>
+                <option value="Analista de Dados">Analista de Dados</option>
+                <option value="Desenvolvedor Front-End">Desenvolvedor Front-End</option>
+                <option value="Gestor de Projetos">Gestor de Projetos</option>
+                <option value="Analista de RH">Analista de RH</option>
+                <option value="Administrador de Redes">Administrador de Redes</option>
+                <option value="Coordenador de TI">Coordenador de TI</option>
+                <option value="Analista de Segurança">Analista de Segurança</option>
+                <option value="UX Designer">UX Designer</option>
+                <option value="Engenheiro de Software">Engenheiro de Software</option>
+                <option value="QA Tester">QA Tester</option>
+                <option value="Product Owner">Product Owner</option>
+                <option value="Scrum Master">Scrum Master</option>
+                <option value="Designer Gráfico">Designer Gráfico</option>
+                <option value="DevOps Engineer">DevOps Engineer</option>
+              </select>
+            </div>
+            <div class="mensagem-erro" id="erro-cargo"></div>
+          </div>
+
+          <!-- Campo E-mail -->
+          <div class="campo">
+            <label for="email" class="label">E-mail <span class="obrigatorio">*</span></label>
+            <div class="input-container">
+              <i class="fas fa-envelope icone-campo"></i>
+              <input type="email" id="email" name="email" class="input" required aria-required="true"
+                placeholder="Digite o e-mail"/>
+            </div>
+            <div class="mensagem-erro" id="erro-email"></div>
+          </div>
+
+          <!-- Campo Telefone -->
+          <div class="campo">
+            <label for="telefone" class="label">Telefone</label>
+            <div class="input-container">
+              <i class="fas fa-phone icone-campo"></i>
+              <input type="tel" id="telefone" name="telefone" class="input" placeholder="(11) 99999-9999" />
+            </div>
+            <div class="mensagem-erro" id="erro-telefone"></div>
+          </div>
+
+          <!-- Campo Empresa -->
+          <div class="campo">
+            <label for="empresa" class="label">Empresa</label>
+            <div class="input-container">
+              <i class="fas fa-building icone-campo"></i>
+              <select id="empresa" name="empresa" class="select">
+                <option value="">Selecione a empresa</option>
+                <option value="Calbon Tecnologia">Calbon Tecnologia</option>
+                <option value="Verde Sustentável">Verde Sustentável</option>
+                <option value="Tech Solutions">Tech Solutions</option>
+                <option value="Digital Innovation">Digital Innovation</option>
+              </select>
+            </div>
+            <div class="mensagem-erro" id="erro-empresa"></div>
+          </div>
+
+          <!-- Campo Senha -->
+          <div class="campo">
+            <label for="senha_hash" class="label">Nova Senha</label>
+            <div class="input-container">
+              <i class="fas fa-lock icone-campo"></i>
+              <input type="password" id="senha_hash" name="senha_hash" class="input"
+                placeholder="Deixe em branco para manter a senha atual" />
+            </div>
+            <div class="mensagem-erro" id="erro-senha_hash"></div>
+          </div>
+
+          <!-- Campo Observações -->
+          <div class="campo campo-full">
+            <label for="observacoes" class="label">Observações</label>
+            <div class="input-container">
+              <i class="fas fa-sticky-note icone-campo"></i>
+              <textarea id="observacoes" name="observacoes" class="textarea"
+                placeholder="Digite observações adicionais (opcional)" rows="3"></textarea>
+            </div>
+            <div class="mensagem-erro" id="erro-observacoes"></div>
+          </div>
+        </div>
+
+        <div class="botoes-acao">
+          <button type="button" class="botao-cancelar">
+          <i class="fas fa-times"></i>Cancelar
+        </button>
+
+          <button type="submit" class="botao-salvar" id="botaoSalvar">
+            <i class="fas fa-save"></i>
+            <span class="texto-botao">Salvar Alterações</span>
+          </button>
+        </div>
+
+      </form>
+    </section>
+  </main>
+  
+  <div id="toast" class="toast hidden">
+    <img id="toastIcon" src="" alt="">
+    <span id="toastMsg"></span>
+  </div>
+
+  <!------------------------------------------------------- SCRIPT --------------------------------------------------------------------------->
+  <script src="/AreaRestrita/js/toast.js"></script>
+  <script src="/AreaRestrita/js/sidebar-navigation.js"></script>
+</body>
+
+</html>
