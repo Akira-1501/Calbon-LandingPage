@@ -142,83 +142,6 @@ option {
   background-color: #e3f7ff;
 }
 
-/*--------------------------------------------------- INPUTS, SELECTS E TEXTAREA -----------------------------------------*/
-.input, .select, .textarea {
-  width: 100%;
-  padding: 16px 16px 16px 48px;
-  border: 2px solid #374151;
-  border-radius: 12px;
-  background: #1a2a3a;
-  color: #ffffff;
-  font-family: 'Inter', sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  transition: all 0.3s ease;
-  outline: none;
-  box-sizing: border-box;
-}
-
-.input::placeholder, .textarea::placeholder {
-  color: #6b7280;
-  font-style: italic;
-}
-
-.select {
-  cursor: pointer;
-  appearance: none;
-  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%236b7280' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6,9 12,15 18,9'%3e%3c/polyline%3e%3c/svg%3e");
-  background-repeat: no-repeat;
-  background-position: right 16px center;
-  background-size: 16px;
-  padding-right: 48px;
-}
-
-.textarea {
-  resize: vertical;
-  min-height: 100px;
-  padding-top: 16px;
-  padding-bottom: 16px;
-}
-
-/*--------------------------------------------------- ESTADOS DOS INPUTS -----------------------------------------*/
-.input:focus, .select:focus, .textarea:focus {
-  border-color: #1cd5ea;
-  background: #1e3a52;
-  box-shadow: 0 0 0 4px rgba(28, 213, 234, 0.1);
-}
-
-.input-container:focus-within .icone-campo {
-  color: #1cd5ea;
-}
-
-.input:hover, .select:hover, .textarea:hover {
-  border-color: #4b5563;
-  background: #1e3a52;
-}
-
-.input:disabled, .select:disabled, .textarea:disabled {
-  background: #374151;
-  color: #9ca3af;
-  cursor: not-allowed;
-  opacity: 0.6;
-}
-
-/*--------------------------------------------------- MENSAGENS DE ERRO -----------------------------------------*/
-.mensagem-erro {
-  font-family: 'Inter', sans-serif;
-  font-size: 12px;
-  color: #ff4757;
-  margin-top: 4px;
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  min-height: 20px;
-  opacity: 0;
-  transform: translateY(-4px);
-  transition: all 0.3s ease;
-}
-
-
 /*--------------------------------------------------- BOTÕES DE AÇÃO -----------------------------------------*/
 .botoes-acao {
   display: flex;
@@ -304,13 +227,3 @@ option {
 
 
 /*--------------------------------------------------- ANIMAÇÕES -----------------------------------------*/
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}

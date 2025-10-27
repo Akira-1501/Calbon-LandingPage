@@ -1,17 +1,3 @@
-/**
- * ESTILOS PARA MODAL DE CONFIRMAÇÃO
- * 
- * Classes principais:
- * - .modal: Overlay do modal
- * - .modal-conteudo: Conteúdo central do modal
- * - .modal-header: Cabeçalho com título e botão fechar
- * - .modal-body: Corpo com ícone e texto
- * - .modal-footer: Rodapé com botões de ação
- * - .toast-notificacao: Notificações toast
- * 
- * Estados: .ativo para mostrar modal/toast
- * Animações: fadeIn, slideIn, fadeOut
- */
 
 /*--------------------------------------------------- MODAL DE CONFIRMAÇÃO -----------------------------------------*/
 .modal {
