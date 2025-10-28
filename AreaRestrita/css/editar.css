@@ -207,3 +207,7 @@ option {
 .texto-botao {
   transition: all 0.3s ease;
 }
+
+#nome{
+  border: 1px solid #1cd5ea;
+}
