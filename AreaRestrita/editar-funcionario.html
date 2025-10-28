@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <link rel="icon" href="/AreaRestrita/img/icone-logo.ico" type="image/icon" />
 </head>
+
 <body>
   <!---------------------------------------------------- BARRA LATERAL  -------------------------------------------------------->
   <aside class="sidebar">
@@ -56,12 +57,12 @@
 
         <div class="titulo">
           <i class="fas fa-user-edit icone-titulo"></i>
-          <h1 >Editar Funcionário</h1>
+          <h1>Editar Funcionário</h1>
         </div>
-        <a  class="fechar" href="/AreaRestrita/inicio.html"> <i class="fas fa-times"></i></a>
+        <a class="fechar" href="/AreaRestrita/inicio.html"> <i class="fas fa-times"></i></a>
       </div>
 
-      <form class="formulario" id="formEditarFuncionario" >
+      <form class="formulario" id="formEditarFuncionario">
         <input type="hidden" id="funcionario_id" name="funcionario_id" />
 
         <div class="grid-campos">
@@ -87,31 +88,33 @@
           </div>
 
           <!-- Campo Cargo -->
+          <!-- Campo Cargo convertido em datalist -->
           <div class="campo">
             <label for="cargo" class="label">Cargo</label>
             <div class="input-container">
               <i class="fas fa-briefcase icone-campo"></i>
-              <select id="cargo" name="cargo" class="select" required aria-required="true" >
-                <option value="">Selecione o cargo</option>
-                <option value="Gerente">Gerente</option>
-                <option value="Desenvolvedor">Desenvolvedor</option>
-                <option value="Analista">Analista</option>
-                <option value="Analista de Dados">Analista de Dados</option>
-                <option value="Desenvolvedor Front-End">Desenvolvedor Front-End</option>
-                <option value="Gestor de Projetos">Gestor de Projetos</option>
-                <option value="Analista de RH">Analista de RH</option>
-                <option value="Administrador de Redes">Administrador de Redes</option>
-                <option value="Coordenador de TI">Coordenador de TI</option>
-                <option value="Analista de Segurança">Analista de Segurança</option>
-                <option value="UX Designer">UX Designer</option>
-                <option value="Engenheiro de Software">Engenheiro de Software</option>
-                <option value="QA Tester">QA Tester</option>
-                <option value="Product Owner">Product Owner</option>
-                <option value="Scrum Master">Scrum Master</option>
-                <option value="Designer Gráfico">Designer Gráfico</option>
-                <option value="DevOps Engineer">DevOps Engineer</option>
-              </select>
+              <input type="text" id="cargo" name="cargo" class="input" list="opcoesCargo"
+                placeholder="Selecione o cargo" required>
             </div>
+            <datalist id="opcoesCargo">
+              <option value="Gerente">
+              <option value="Desenvolvedor">
+              <option value="Analista">
+              <option value="Analista de Dados">
+              <option value="Desenvolvedor Front-End">
+              <option value="Gestor de Projetos">
+              <option value="Analista de RH">
+              <option value="Administrador de Redes">
+              <option value="Coordenador de TI">
+              <option value="Analista de Segurança">
+              <option value="UX Designer">
+              <option value="Engenheiro de Software">
+              <option value="QA Tester">
+              <option value="Product Owner">
+              <option value="Scrum Master">
+              <option value="Designer Gráfico">
+              <option value="DevOps Engineer">
+            </datalist>
           </div>
 
           <!-- Campo E-mail -->
@@ -119,7 +122,8 @@
             <label for="email" class="label">E-mail <span class="obrigatorio">*</span></label>
             <div class="input-container">
               <i class="fas fa-envelope icone-campo"></i>
-              <input type="email" id="email" name="email" class="input" required aria-required="true" placeholder="Digite o e-mail"/>
+              <input type="email" id="email" name="email" class="input" required aria-required="true"
+                placeholder="Digite o e-mail" />
             </div>
             <div class="mensagem-erro" id="erro-email"></div>
           </div>
@@ -134,20 +138,20 @@
             <div class="mensagem-erro" id="erro-telefone"></div>
           </div>
 
-          <!-- Campo Empresa -->
+          <!-- Campo Empresa convertido em datalist -->
           <div class="campo">
             <label for="empresa" class="label">Empresa</label>
             <div class="input-container">
               <i class="fas fa-building icone-campo"></i>
-              <select id="empresa" name="empresa" class="select">
-                <option value="">Selecione a empresa</option>
-                <option value="Calbon Tecnologia">Calbon Tecnologia</option>
-                <option value="Verde Sustentável">Verde Sustentável</option>
-                <option value="Tech Solutions">Tech Solutions</option>
-                <option value="Digital Innovation">Digital Innovation</option>
-              </select>
+              <input type="text" id="empresa" name="empresa" class="input" list="opcoesEmpresa"
+                placeholder="Selecione a empresa" required>
             </div>
-            <div class="mensagem-erro" id="erro-empresa"></div>
+            <datalist id="opcoesEmpresa">
+              <option value="Calbon Tecnologia">
+              <option value="Verde Sustentável">
+              <option value="Tech Solutions">
+              <option value="Digital Innovation">
+            </datalist>
           </div>
 
           <!-- Campo Senha -->
@@ -164,8 +168,8 @@
 
         <div class="botoes-acao">
           <button type="button" class="botao-cancelar">
-          <i class="fas fa-times"></i>Cancelar
-        </button>
+            <i class="fas fa-times"></i>Cancelar
+          </button>
 
           <button type="submit" class="botao-salvar" id="botaoSalvar">
             <i class="fas fa-save"></i>
@@ -176,7 +180,7 @@
       </form>
     </section>
   </main>
-  
+
   <div id="toast" class="toast hidden">
     <img id="toastIcon" src="" alt="">
     <span id="toastMsg"></span>
