@@ -120,12 +120,6 @@
                 <button class="botao-excluir" onclick="excluirRegistroEmpresa(2)" title="Excluir empresa">
                   <i class="fas fa-trash"></i>
                 </button>
-                <button class="botao-salvar hidden" onclick="salvarEdicaoEmpresa(2)" title="Salvar alterações">
-                  <i class="fas fa-save"></i>
-                </button>
-                <button class="botao-cancelar hidden" onclick="cancelarEdicaoEmpresa(2)" title="Cancelar edição">
-                  <i class="fas fa-times"></i>
-                </button>
                 <button class="botao-viz-funcionario">
                   <a href="/AreaRestrita/visualizar-funcionario.html" class="botao-visualizar" title="Ver funcionários">
                     <i class="fas fa-users"></i>
@@ -178,91 +172,7 @@
         </div>
       </div>
     </div>
-
-    <!-- Modal de cadastro de empresa -->
-    <div id="modalCadastro" class="modal hidden">
-      <div class="modal-conteudo modal-cadastro">
-        <div class="modal-header">
-          <h3>Cadastrar Nova Empresa</h3>
-          <button class="botao-fechar-modal" onclick="fecharModalCadastro()">
-            <i class="fas fa-times"></i>
-          </button>
-        </div>
-        <div class="modal-body">
-          <form id="formularioCadastro" class="formulario-cadastro">
-            <div class="campo-grupo">
-              <label for="nomeEmpresa">Nome da Empresa:</label>
-              <input type="text" id="nomeEmpresa" name="nomeEmpresa" required>
-            </div>
-
-            <div class="campo-grupo">
-              <label for="cnpj">CNPJ:</label>
-              <input type="text" id="cnpj" name="cnpj" placeholder="00.000.000/0000-00" required>
-            </div>
-
-            <div class="campo-grupo">
-              <label for="categoria">Categoria:</label>
-              <select id="categoria" name="categoria" required>
-                <option value="">Selecione...</option>
-                <option value="Tecnologia da Informação">Tecnologia da Informação</option>
-                <option value="Gestão Ambiental">Gestão Ambiental</option>
-                <option value="Indústria">Indústria</option>
-                <option value="Serviços">Serviços</option>
-                <option value="Comércio">Comércio</option>
-                <option value="Construção Civil">Construção Civil</option>
-                <option value="Agronegócio">Agronegócio</option>
-                <option value="Saúde">Saúde</option>
-                <option value="Educação">Educação</option>
-                <option value="Financeiro">Financeiro</option>
-              </select>
-            </div>
-
-            <div class="campo-grupo">
-              <label for="porte">Porte:</label>
-              <select id="porte" name="porte" required>
-                <option value="">Selecione...</option>
-                <option value="Microempresa">Microempresa</option>
-                <option value="Pequena Empresa">Pequena Empresa</option>
-                <option value="Média Empresa">Média Empresa</option>
-                <option value="Grande Empresa">Grande Empresa</option>
-              </select>
-            </div>
-
-            <div class="campo-grupo">
-              <label for="localizacao">Localização:</label>
-              <select id="localizacao" name="localizacao" required>
-                <option value="">Selecione...</option>
-                <option value="SP">São Paulo</option>
-                <option value="RJ">Rio de Janeiro</option>
-                <option value="SC">Santa Catarina</option>
-                <option value="RS">Rio Grande do Sul</option>
-                <option value="BA">Bahia</option>
-                <option value="MG">Minas Gerais</option>
-                <option value="PR">Paraná</option>
-                <option value="GO">Goiás</option>
-                <option value="DF">Distrito Federal</option>
-                <option value="CE">Ceará</option>
-                <option value="PE">Pernambuco</option>
-                <option value="PA">Pará</option>
-              </select>
-            </div>
-
-            <div class="campo-grupo">
-              <label for="status">Status:</label>
-              <select id="status" name="status" required>
-                <option value="ativo">Ativo</option>
-                <option value="inativo">Inativo</option>
-              </select>
-            </div>
-          </form>
-        </div>
-        <div class="modal-footer">
-          <button class="botao-cancelar-modal" onclick="fecharModalCadastro()">Cancelar</button>
-          <button class="botao-salvar-cadastro" onclick="salvarNovaEmpresa()">Cadastrar</button>
-        </div>
-      </div>
     </div>
-
   </main>
 
   <!-- CSS do modal -->
@@ -271,7 +181,6 @@
   <!-- JS da página -->
   <script src="js/sidebar-navigation.js"></script>
   <script src="js/modal-confirmacao.js"></script>
-  <script src="js/crud-empresas.js"></script>
 </body>
 
 </html>
