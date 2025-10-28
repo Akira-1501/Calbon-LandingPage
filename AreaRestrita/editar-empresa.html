@@ -12,7 +12,7 @@
 </head>
 
 <body>
-<!------------------------------------------------------------ BARRA LATERAL ------------------------------------------------------------->
+  <!------------------------------------------------------------ BARRA LATERAL ------------------------------------------------------------->
   <aside class="sidebar">
     <ul>
       <a href="/AreaRestrita/inicio.html" class="sidebar-item active">
@@ -52,15 +52,21 @@
 
       <form class="formulario" id="formInserirEmpresa">
         <div class="grid-campos">
-
           <div class="campo">
             <label for="nomeEmpresa" class="label">Nome da Empresa</label>
             <div class="input-container">
               <i class="fas fa-building icone-campo"></i>
               <input type="text" id="nomeEmpresa" name="nomeEmpresa" class="input"
-                placeholder="Digite o nome da sua empresa" required>
+                placeholder="Selecione ou digite o nome da empresa a ser editada" list="listaEmpresas" required>
             </div>
           </div>
+
+          <datalist id="listaEmpresas">
+            <option value="Empresa Alfa Tecnologia"></option>
+            <option value="Beta Consultoria Ltda"></option>
+            <option value="Gamma Soluções Digitais"></option>
+            <option value="Delta Marketing"></option>
+          </datalist>
 
           <div class="campo">
             <label for="categoriaEmpresa" class="label">Categoria da Empresa</label>
@@ -221,14 +227,6 @@
               <option value="Empresa de Economia Mista">
               <option value="Holding / Grupo Empresarial">
             </datalist>
-          </div>
-
-          <div class="campo">
-            <label for="cnpj" class="label">CNPJ</label>
-            <div class="input-container">
-              <i class="fas fa-id-card icone-campo"></i>
-              <input type="text" id="cnpj" name="cnpj" class="input" placeholder="00.000.000/0001-00" required>
-            </div>
           </div>
 
           <div class="campo">
