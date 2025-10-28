@@ -226,4 +226,41 @@ option {
 }
 
 
+/* ===== INPUTS COM ÍCONES ===== */
+.input-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input-container .icone-campo {
+  position: absolute;
+  left: 14px;
+  color: #6b7a8f;
+  font-size: 1rem;
+  pointer-events: none;
+}
+
+.input, .select {
+  width: 100%;
+  padding: 20px 20px 15px 50px;
+  background: #15263a;
+  border: 1px solid #1c2b3a;
+  border-radius: 15px;
+  color: #fff;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+.input, .select::placeholder {
+  color: #6c7a8f;
+}
+
+/* ===== EFEITO AO FOCAR ===== */
+.input:focus {
+  border-color: #00baff;
+  box-shadow: 0 0 8px rgba(0, 186, 255, 0.4);
+}
+
 /*--------------------------------------------------- ANIMAÇÕES -----------------------------------------*/
