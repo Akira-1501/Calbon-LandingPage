@@ -67,25 +67,23 @@
 
         <div class="grid-campos">
           <div class="campo">
-            <label for="numero_cracha" class="label">Número do Crachá</label>
-            <div class="input-container">
-              <i class="fas fa-id-badge icone-campo"></i>
-              <input type="text" id="numero_cracha" name="numero_cracha" class="input"
-                placeholder="Gerado automaticamente" />
-            </div>
-            <div class="mensagem-erro" id="erro-numero_cracha"></div>
-          </div>
-
-          <!-- Campo Nome -->
-          <div class="campo">
             <label for="nome" class="label">Nome Completo <span class="obrigatorio">*</span></label>
             <div class="input-container">
               <i class="fas fa-user icone-campo"></i>
               <input type="text" id="nome" name="nome" class="input" required aria-required="true"
-                placeholder="Digite o nome completo" />
+                placeholder="Selecione o nome do funcionário a ser editado" list="listaFuncionarios" />
             </div>
             <div class="mensagem-erro" id="erro-nome"></div>
           </div>
+
+          <datalist id="listaFuncionarios">
+            <option value="Ana Silva"></option>
+            <option value="Bruno Santos"></option>
+            <option value="Carlos Oliveira"></option>
+            <option value="Diana Pereira"></option>
+            <option value="Eduardo Costa"></option>
+            <option value="Fernanda Lima"></option>
+          </datalist>
 
           <!-- Campo Cargo -->
           <!-- Campo Cargo convertido em datalist -->
