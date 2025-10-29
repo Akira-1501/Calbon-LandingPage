@@ -1,226 +1,64 @@
-// ================= REGEX DE VALIDAÇÃO =================
-const regexTel = /^\(?[0-9]{2}[) ]*[0-9]{5}[- ]*[0-9]{4}$/;
-const regexSenha = /^(?=.*[A-Z])(?=.*[!#@$%&])(?=.*[0-9])(?=.*[a-z]).{6,15}$/;
-const regexCPF = /^(?:\d{3}\.\d{3}\.\d{3}-\d{2}|\d{11})$/;
-const regexEmail =/(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|"(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])/;
-const regexCracha = /^\d+$/;
-const regexCNPJ = /^\d{2}\.\d{3}\.\d{3}\/\d{4}-\d{2}$/;
-
-// ======================================================
-// Funções de validação
-const validarTelefone = (t) => regexTel.test(t);
-const validarSenha = (s) => regexSenha.test(s);
-const validarCPF = (c) => regexCPF.test(c);
-const validarEmail = (e) => regexEmail.test(e);
-const validarCracha = (c) => regexCracha.test(c);
-const validarCNPJ = (c) => regexCNPJ.test(c);
-
-// ======================================================
-// Estilo visual para erro / sucesso
-// ======================================================
-function marcarErro(campo, mensagem) {
-  campo.classList.add("erro-input");
-  campo.classList.remove("valido-input");
-  campo.classList.add("shake");
-  setTimeout(() => campo.classList.remove("shake"), 400);
-
-  const erro = campo.nextElementSibling;
-  if (erro) {
-    erro.textContent = mensagem;
-    erro.classList.add("msg-erro");
-  }
+// regex.js
+export function validateEmail(email) {
+  const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!email.trim()) return { valid: false, message: "O campo de e-mail é obrigatório." };
+  if (!regex.test(email)) return { valid: false, message: "Digite um e-mail válido (ex: exemplo@dominio.com)." };
+  return { valid: true, message: "" };
 }
 
-function marcarValido(campo) {
-  campo.classList.remove("erro-input");
-  campo.classList.add("valido-input");
-
-  const erro = campo.nextElementSibling;
-  if (erro) erro.textContent = "";
+export function validatePassword(password) {
+  const regex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d@$!%*#?&]{6,}$/;
+  if (!password.trim()) return { valid: false, message: "A senha é obrigatória." };
+  if (!regex.test(password)) return { valid: false, message: "A senha deve ter ao menos 6 caracteres, com letras e números." };
+  return { valid: true, message: "" };
 }
 
-// ======================================================
-// Validação em tempo real
-// ======================================================
-document.addEventListener("DOMContentLoaded", () => {
-  const campos = {
-    telefone: validarTelefone,
-    senha: validarSenha,
-    cpf: validarCPF,
-    email: validarEmail,
-    cracha: validarCracha,
-    cnpj: validarCNPJ,
-  };
+export function validateName(name) {
+  const regex = /^[A-Za-zÀ-ÿ\s]{3,}$/;
+  if (!name.trim()) return { valid: false, message: "O nome é obrigatório." };
+  if (!regex.test(name)) return { valid: false, message: "O nome deve conter apenas letras e ao menos 3 caracteres." };
+  return { valid: true, message: "" };
+}
 
-  const camposInput = ["telefone", "senha", "cpf", "email", "cracha"];
-  const camposBlur = ["cnpj"];
+export function validateCNPJ(cnpj) {
+  const regex = /^\d{2}\.\d{3}\.\d{3}\/\d{4}-\d{2}$/;
+  if (!cnpj.trim()) return { valid: false, message: "O CNPJ é obrigatório." };
+  if (!regex.test(cnpj)) return { valid: false, message: "Formato inválido. Use: 00.000.000/0000-00." };
+  return { valid: true, message: "" };
+}
 
-  camposInput.forEach((id) => {
-    const campo = document.getElementById(id);
-    if (campo) {
-      campo.addEventListener("input", function () {
-        if (!campos[id](this.value))
-          marcarErro(this, `${this.previousElementSibling.textContent} inválido.`);
-        else marcarValido(this);
-      });
-    }
-  });
+export function validateCPF(cpf) {
+  const regex = /^\d{3}\.\d{3}\.\d{3}-\d{2}$/;
+  if (!cpf.trim()) return { valid: false, message: "O CPF é obrigatório." };
+  if (!regex.test(cpf)) return { valid: false, message: "Formato inválido. Use: 000.000.000-00." };
+  return { valid: true, message: "" };
+}
 
-  camposBlur.forEach((id) => {
-    const campo = document.getElementById(id);
-    if (campo) {
-      campo.addEventListener("blur", function () {
-        const valor = this.value.trim();
-        const nomeCampo = this.previousElementSibling.textContent;
+export function validateTelefone(telefone) {
+  const regex = /^\(?\d{2}\)?\s?\d{4,5}-?\d{4}$/;
+  if (!telefone.trim()) return { valid: false, message: "O telefone é obrigatório." };
+  if (!regex.test(telefone)) return { valid: false, message: "Formato inválido. Use: (11) 99999-9999." };
+  return { valid: true, message: "" };
+}
 
-        if (!valor) {
-          this.classList.remove("erro-input", "valido-input");
-          const erro = this.nextElementSibling;
-          if (erro) erro.textContent = "";
-        } else if (!campos[id](valor)) {
-          marcarErro(this, `${nomeCampo} incorreto. Use o formato: 00.000.000/0000-00`);
-        } else {
-          marcarValido(this);
-        }
-      });
-      campo.removeEventListener("input", null);
-    }
-  });
+export function validateEndereco(endereco) {
+  if (!endereco.trim()) return { valid: false, message: "O endereço é obrigatório." };
+  if (endereco.length < 5) return { valid: false, message: "Endereço muito curto." };
+  return { valid: true, message: "" };
+}
 
-  // ======================================================
-  // FORMULÁRIO DE CADASTRO
-  // ======================================================
-  const formCadastro = document.getElementById("cadastro");
-  if (formCadastro) {
-    formCadastro.addEventListener("submit", function (e) {
-      e.preventDefault();
-      let valido = true;
-      const dados = {};
-
-      this.querySelectorAll("input[required]").forEach((input) => {
-        const id = input.id;
-        const valor = input.value.trim();
-        const funcValida = campos[id];
-        const nomeCampo = input.previousElementSibling.textContent;
-
-        if (!valor) {
-          marcarErro(input, "Campo obrigatório.");
-          valido = false;
-        } else if (funcValida && !funcValida(valor)) {
-          if (id === "cnpj") {
-            marcarErro(input, `${nomeCampo} incorreto. Use o formato: 00.000.000/0000-00`);
-          } else {
-            marcarErro(input, `${nomeCampo} inválido.`);
-          }
-          valido = false;
-        } else {
-          marcarValido(input);
-          dados[id] = valor;
-        }
-      });
-
-      if (valido) {
-        localStorage.setItem("dadosCadastro", JSON.stringify(dados));
-        alert("✅ Cadastro validado com sucesso!");
-        window.location.href = "/LandingPage/criar-senha.html";
-      } else {
-        alert("❌ Corrija os campos destacados antes de continuar.");
-      }
-    });
+// Função genérica para identificar o tipo de campo
+export function validateByType(input) {
+  const type = input.getAttribute('data-validate');
+  switch (type) {
+    case 'email': return validateEmail(input.value);
+    case 'password': return validatePassword(input.value);
+    case 'name': return validateName(input.value);
+    case 'cpf': return validateCPF(input.value);
+    case 'cnpj': return validateCNPJ(input.value);
+    case 'telefone': return validateTelefone(input.value);
+    case 'endereco': return validateEndereco(input.value);
+    default:
+      return { valid: input.value.trim() !== '', message: "Campo obrigatório." };
   }
-
-  // ======================================================
-  // FORMULÁRIO DE ENTRAR (LOGIN)
-  // ======================================================
-  const formEntrar = document.getElementById("formEntrar");
-  const cnpjLogin = document.getElementById("cnpjLogin");
-
-  if (formEntrar && cnpjLogin) {
-    formEntrar.addEventListener("submit", (e) => {
-      e.preventDefault();
-      const cnpj = cnpjLogin.value.trim();
-
-      if (!regexCNPJ.test(cnpj)) {
-        marcarErro(cnpjLogin, "CNPJ incorreto. Use o formato: 00.000.000/0000-00");
-        return; // 🔒 Impede o envio do formulário
-      }
-
-      marcarValido(cnpjLogin);
-      alert("✅ CNPJ validado com sucesso!");
-      window.location.href = "/LandingPage/visualizar.html";
-    });
-
-    // Validação em tempo real
-    cnpjLogin.addEventListener("input", () => {
-      const valor = cnpjLogin.value.trim();
-      if (!valor) {
-        cnpjLogin.classList.remove("erro-input", "valido-input");
-        const erro = cnpjLogin.nextElementSibling;
-        if (erro) erro.textContent = "";
-      } else if (!regexCNPJ.test(valor)) {
-        marcarErro(cnpjLogin, "CNPJ incorreto. Use o formato: 00.000.000/0000-00");
-      } else {
-        marcarValido(cnpjLogin);
-      }
-    });
-  }
-
-
-  // ======================================================
-  // FORMULÁRIO DE CRIAR SENHA
-  // ======================================================
-  const formSenha = document.getElementById("formSenha");
-  if (formSenha) {
-    const senha = document.getElementById("senha");
-    const confirmar = document.getElementById("confirmarSenha");
-
-    formSenha.addEventListener("submit", (e) => {
-      e.preventDefault();
-      let valido = true;
-
-      if (!regexSenha.test(senha.value)) {
-        marcarErro(
-          senha,
-          "A senha deve ter 6–15 caracteres, 1 maiúscula, 1 minúscula, 1 número e 1 símbolo (!#@$%&)."
-        );
-        valido = false;
-      } else marcarValido(senha);
-
-      if (senha.value !== confirmar.value) {
-        marcarErro(confirmar, "As senhas não coincidem.");
-        valido = false;
-      } else marcarValido(confirmar);
-
-      if (valido) {
-        const dados = JSON.parse(localStorage.getItem("dadosCadastro")) || {};
-        dados.senha = senha.value;
-        localStorage.setItem("dadosCadastro", JSON.stringify(dados));
-        alert("✅ Senha criada com sucesso!");
-        window.location.href = "/LandingPage/visualizar.html";
-      }
-    });
-
-    senha.addEventListener("input", () => {
-      if (regexSenha.test(senha.value)) marcarValido(senha);
-      else marcarErro(senha, "Senha fraca.");
-    });
-  }
-
-  // ======================================================
-  // PÁGINA DE VISUALIZAR
-  // ======================================================
-  const visualizar = document.getElementById("dadosUsuario");
-  if (visualizar) {
-    const dados = JSON.parse(localStorage.getItem("dadosCadastro"));
-    if (dados) {
-      visualizar.innerHTML = `
-        <h3>Dados Cadastrados:</h3>
-        <ul>
-          ${Object.entries(dados)
-            .map(([chave, valor]) => `<li><strong>${chave}:</strong> ${valor}</li>`)
-            .join("")}
-        </ul>
-      `;
-    }
-  }
-});
+}
