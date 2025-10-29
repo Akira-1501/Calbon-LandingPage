@@ -64,6 +64,19 @@ body {
 
 
 /*----------------------------------------------- MAIN ------------------------------------------------ */
+.main-content {
+  position: relative; /* necessário para o overlay */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 0 10%;
+  gap: 50px;
+  background-image: url("/LandingPage/assets/Fundo1.png");
+
+
+  z-index: 0;
+}
 .texto-main {
   flex: 1;
   width: 100%;
