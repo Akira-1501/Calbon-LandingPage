@@ -79,8 +79,8 @@ body {
 }
 .texto-main {
   flex: 1;
-  width: 100%;
   max-width: 800px;
+  margin-left: -500px; 
   color: white;
   display: flex;
   flex-direction: column;
@@ -135,81 +135,93 @@ body {
 }
 
 /*---------------------------------------------- SOBRE NÓS ----------------------------------------------------*/
-.sobre-nos {
-  margin-top: 60px;
-  background-color: var(--fundo-principal);
-  color: #ffffff;
-  padding: 80px 10%;
-}
+ .sobre-nos {
+   padding: 80px 0;
+   background-color: #07101C;
+ }
+ 
+ .sobre-container {
+   max-width: 1200px;
+   margin: 0 auto;
+   padding: 40px;
+   background: #031d35bc;
+   border-radius: 20px;
+   backdrop-filter: blur(10px);
+   border: 1px solid rgba(255, 255, 255, 0.1);
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 60px;
+   align-items: center;
+   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+ }
+ 
+ .sobre-content {
+   text-align: left;
+ }
 
-.sobre-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 40px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
+ .sobre-titulo {
+   font-size: 2.5rem;
+   font-weight: 700;
+   color: #60a5fa;
+   margin-bottom: 30px;
+ }
+ 
+ .sobre-texto {
+   font-size: 1.1rem;
+   color: #e2e8f0;
+   margin-bottom: 25px;
+   line-height: 1.7;
+ }
+ 
+ .sobre-features {
+   list-style: none;
+   padding: 0;
+   margin: 0;
+ }
+ 
+ .sobre-features li {
+   color: #e2e8f0;
+   margin-bottom: 8px;
+   font-size: 1rem;
+   line-height: 1.5;
+ }
+ 
+ .sobre-question {
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+ }
+ 
+ .question-title {
+   font-size: 2rem;
+   font-weight: 700;
+   color: #60a5fa;
+   margin-bottom: 30px;
+   line-height: 1.4;
+   text-align: center;
+ }
+ 
+ .btn-features {
+   background: linear-gradient(135deg, #60a5fa, #3b82f6);
+   color: white;
+   border: none;
+   padding: 15px 35px;
+   border-radius: 30px;
+   font-weight: 600;
+   font-size: 1.1rem;
+   cursor: pointer;
+   transition: all 0.3s ease;
+   text-decoration: none;
+   display: inline-block;
+ }
 
-.sobre-texto {
-  margin-top: 5px;
-  flex: 1;
-}
-
-.sobre-nos h1 {
-  text-align: center;
-  color: #ffffff;
-  font-size: 4rem;
-  margin-bottom: 15px;
-}
-
-.sobre-texto p {
-  color: #cfe8f3;
-  line-height: 1.7;
-  margin-bottom: 20px;
-}
-
-.sobre-texto ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.sobre-texto ul li {
-  position: relative;
-  padding-left: 26px;
-  color: #cfe8f3;
-}
-
-.sobre-texto ul li::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 8px;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background:linear-gradient(90deg, #0da5cf, #1479e5);
-}
-
-.sobre-imagem {
-  margin-top: 20px;
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.sobre-imagem img {
-  border-radius: 10px;
-  width: 100%;
-  max-width: 520px;
-  height: auto;
-  filter: drop-shadow(0 10px 30px rgba(107, 178, 208, 0.28));
-}
+ .btn-features:hover {
+   background: linear-gradient(135deg, #3b82f6, #2563eb);
+   transform: translateY(-2px);
+   box-shadow: 0 10px 25px rgba(96, 165, 250, 0.4);
+ }
 
 /*----------------------------------------- ESCOPOS -----------------------------------------------------*/
 
