@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Funcionários | Painel Administrativo</title>
   <link rel="stylesheet" href="/AreaRestrita/css/layout.css" />
+  <link rel="stylesheet" href="/AreaRestrita/css/modal-confirmacao.css">
   <link rel="stylesheet" href="/AreaRestrita/css/visualizar-empresa.css">
   <link rel="stylesheet" href="/AreaRestrita/css/visualizar-funcionario.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
@@ -63,7 +64,7 @@
     </div>
 
     <!------------------------------------------------ TABELA - VIZUALIZAÇÃO -------------------------------------------------------->
-     <div class="tabela-container">
+    <div class="tabela-container">
       <table id="tabelaFuncionarios">
         <thead>
           <tr>
@@ -88,7 +89,8 @@
             <td>RJ</td>
             <td>
               <div class="acoes-linha">
-                <button type="submit" class="botao-excluir" onclick="excluirRegistroFuncionario(1)" title="Excluir funcionário">
+                <button type="submit" class="botao-excluir" onclick="excluirRegistroFuncionario(1)"
+                  title="Excluir funcionário">
                   <i class="fas fa-trash"></i>
                 </button>
               </div>
@@ -104,7 +106,8 @@
             <td>SP</td>
             <td>
               <div class="acoes-linha">
-                <button type="submit" class="botao-excluir" onclick="excluirRegistroFuncionario(2)" title="Excluir funcionário">
+                <button type="submit" class="botao-excluir" onclick="excluirRegistroFuncionario(2)"
+                  title="Excluir funcionário">
                   <i class="fas fa-trash"></i>
                 </button>
               </div>
@@ -130,21 +133,12 @@
     </div>
 
     <!-- Modal de confirmação de exclusão -->
-    <div id="modalConfirmacao" class="modal hidden">
+    <div id="modalConfirmacao" class="modal">
       <div class="modal-conteudo">
-        <div class="modal-header">
-          <h3>Confirmar Exclusão</h3>
-          <button class="botao-fechar-modal" onclick="fecharModal()">
-            <i class="fas fa-times"></i>
-          </button>
-        </div>
-        <div class="modal-body">
-          <p>Tem certeza que deseja excluir este funcionário?</p>
-          <p class="texto-destaque">Esta ação não pode ser desfeita.</p>
-        </div>
-        <div class="modal-footer">
-          <button class="botao-cancelar-modal" onclick="fecharModal()">Cancelar</button>
-          <button class="botao-confirmar-exclusao" onclick="confirmarExclusao()">Excluir</button>
+        <p>Tem certeza de que deseja excluir esta empresa?</p>
+        <div class="botoes-modal">
+          <button class="cancelar" onclick="fecharModalConfirmacao()">Cancelar</button>
+          <button class="confirmar" onclick="confirmarExclusao()">Excluir</button>
         </div>
       </div>
     </div>
@@ -154,9 +148,9 @@
   <link rel="stylesheet" href="css/modal-confirmacao.css" />
 
   <!-- JS da página -->
-  <script src="js/sidebar-navigation.js"></script>
-  <script src="js/modal-confirmacao.js"></script>
-  <script src="js/crud-funcionarios.js"></script>
+  <script src="/AreaRestrita/js/sidebar-navigation.js"></script>
+  <script src="/AreaRestrita/js/modal-confirmacao.js"></script>
+  <script src="/AreaRestrita/js/crud-funcionarios.js"></script>
 </body>
 
 </html>
