@@ -267,3 +267,12 @@ nav.lista-header ul li a:hover::after {
 
 
 
+.input-error {
+  border: 2px solid #e74c3c !important;
+}
+
+.error-message {
+  color: #e74c3c;
+  font-size: 0.85rem;
+  margin-top: 4px;
+}
