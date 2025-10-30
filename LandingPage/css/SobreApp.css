@@ -428,7 +428,7 @@ span {
 /* ===== SEÇÃO BEM-ESTAR MENTAL (INSPIRADA NO CLEARMIND YOGA) ===== */
 .secao-bem-estar {
   background: linear-gradient(90deg, #10b7ca, rgb(0, 140, 255));
-  padding: 30px 5%;
+  padding: 10px 5%;
   margin: 0 auto;
   width: 1300px;
   border-radius: 20px;
@@ -478,10 +478,6 @@ span {
 
 .imagem-app {
   width: 300px;
-  /* width: 100%;
-  height: auto;
-  border-radius: 20px;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2); */
 }
 
 /* ===== SEÇÃO MISSÃO ===== */
