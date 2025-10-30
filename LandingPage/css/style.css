@@ -72,7 +72,7 @@ body {
   height: 100vh;
   padding: 0 10%;
   gap: 50px;
-  background-image: url("/LandingPage/assets/Fundo1.png");
+  background-image: url("/Calbon-LandingPage/LandingPage/assets/Fundo1.png");
 
 
   z-index: 0;
@@ -226,7 +226,7 @@ body {
 /*----------------------------------------- NOSSO APP -----------------------------------------------------*/
 .nosso-app {
   padding: 80px 0;
-  background-image: url('/LandingPage/assets/Fundo2.png');
+  background-image: url('/Calbon-LandingPage/LandingPage/assets/Fundo2.png');
   min-height: 600px;
   position: relative;
 }
@@ -476,6 +476,109 @@ body {
 .col2 .column-text-bottom {
 	margin-top: 2.06rem;
 }
+
+
+
+/* --------------------------------------------- VALORES --------------------------------------- */
+.container-valores {
+  border-radius: 20px;
+  background-color: #008bfd1e;
+  text-align: center;
+  margin: 50px auto;
+  padding: 0 20px;
+  max-width: 1400px;
+}
+
+.container-valores h2 {
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+
+
+.valores {
+  white-space: nowrap;
+  color: #010404;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  display: flex;
+  padding: 10px;
+  text-align: center;
+  /* flex-wrap: wrap;  */
+  justify-content: center;
+  margin: 0 auto;
+  border-radius: 15px;
+  position: relative;
+}
+
+.valores div {
+  flex: 0 0 auto;
+  color: #fff;
+  padding: 10px;
+  border-radius: 25px;
+  font-weight: 600;
+  text-align: center;
+  font-size: 1.2rem;
+  user-select: none;
+  transition: transform 0.3s;
+}
+
+/* .franqueza {
+  border: 2px solid #a80011;
+  background-color: #D5202A;
+  width: 200px;
+  padding: 15px;
+  border-radius: 15px;
+}
+
+.disciplina {
+  border: 2px solid #ff7b00;
+  background-color: #ef933b;
+  width: 200px;
+  padding: 15px;
+  border-radius: 15px;
+}
+
+.determinacao {
+  border: 2px solid #4a8f36;
+  background-color: #79AB5C;
+  width: 200px;
+  padding: 15px;
+  border-radius: 15px;
+}
+
+.simplicidade {
+  border: 2px solid #1a804a;
+  background-color: #46A261;
+  width: 200px;
+  padding: 15px;
+  border-radius: 15px;
+}
+
+.humildade {
+  border: 2px solid #0b6fa4;
+  background-color: #1B9BC7;
+  width: 200px;
+  padding: 15px;
+  border-radius: 15px;
+}
+
+.disponibilidade {
+  border: 2px solid #e04b1a;
+  background-color: #e86339;
+  width: 200px;
+  padding: 15px;
+  border-radius: 15px;
+}
+
+.atitude-dono {
+  border: 2px solid #75c8f1;
+  background-color: #A5CDE1;
+  width: 250px;
+  padding: 15px;
+  border-radius: 15px;
+} */
 
 /* /---------------------------------------------- PLANOS ----------------------------------------------------/ */
 
