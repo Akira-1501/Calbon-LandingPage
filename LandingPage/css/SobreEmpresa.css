@@ -1,0 +1,1644 @@
+.lading-page-pagina {
+	container: lading-page-pagina / inline-size;
+	position: relative;
+	height: 6010px;
+	font-family: 'Inter';
+	line-height: normal;
+	letter-spacing: 0px;
+	background: url(../assets/lading-page-pagina.png) center / cover no-repeat, linear-gradient(#fff, #fff) top left / auto auto no-repeat;
+	overflow: hidden;
+	--minContent: 0;
+	--hSizing: FILL;
+	--vSizing: FIXED;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: MIN;
+}
+
+.lading-page-pagina-header {
+	position: absolute; left: 0; right: 0;
+	background-position: top left;
+	background-size: auto auto;
+	background-repeat: no-repeat;
+	--minContent: 996;
+	--hSizing: FILL;
+	--vSizing: FIXED;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: MIN;
+}
+
+.text-col {
+	color: #fff;
+	font-size: 21.07px;
+	font-weight: 600;
+	--minContent: 335;
+	--hSizing: FILL;
+	--vSizing: HUG;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: MIN;
+}
+
+.text-a {
+	color: #e0e0e0;
+	font-size: 18.64px;
+	--minContent: 335;
+	--hSizing: FILL;
+	--vSizing: HUG;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: MIN;
+}
+
+.btn-botao-saiba-mais {
+	width: 243px;
+	display: flex;
+	justify-content: center;
+	align-self: center;
+	color: #000;
+	font-size: 16.87px;
+	font-style: normal;
+	letter-spacing: 0px;
+	text-align: center;
+	background-color: #35a1ef;
+	padding: 8px 10px 10px 10px;
+	border-radius: 24.05px;
+	--minContent: 212;
+	--hSizing: FIXED;
+	--vSizing: HUG;
+	--pConstraintHorizontal: CENTER;
+	--pConstraintVertical: MIN;
+}
+
+.footer-text-a {
+	color: #6bb2d0;
+	font-size: 19.44px;
+	--minContent: 126;
+	--hSizing: FILL;
+	--vSizing: HUG;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: MIN;
+}
+
+.footer-text-b {
+	--minContent: 126;
+	--hSizing: FILL;
+	--vSizing: HUG;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: MIN;
+}
+
+.line {
+	height: 0;
+	--minContent: 1000;
+	--hSizing: FILL;
+	--vSizing: FIXED;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: MIN;
+}
+
+.subtitle-a {
+	margin-top: 13px;
+	color: #fff;
+	font-size: 22.67px;
+	font-weight: 700;
+	--minContent: 253;
+	--hSizing: FILL;
+	--vSizing: HUG;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: MIN;
+}
+
+.text-b {
+	margin-top: -1px;
+	color: #8f8f92;
+	font-size: 17.83px;
+	font-weight: 400;
+	--minContent: 253;
+	--hSizing: FILL;
+	--vSizing: HUG;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: MIN;
+}
+
+.subtitle-b {
+	margin-top: 11px;
+	color: #fff;
+	font-size: 22.61px;
+	font-weight: 700;
+	--minContent: 253;
+	--hSizing: FILL;
+	--vSizing: HUG;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: MIN;
+}
+
+.text-c {
+	margin-top: -1px;
+	color: #8f8f92;
+	font-size: 17.78px;
+	font-weight: 400;
+	--minContent: 253;
+	--hSizing: FILL;
+	--vSizing: HUG;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: MIN;
+}
+
+
+
+/* column */
+
+.column {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	--minContent: 858;
+	--hSizing: FIXED;
+	--vSizing: HUG;
+	--pConstraintHorizontal: CENTER;
+	--pConstraintVertical: MIN;
+}
+
+.column-subtitle {
+	font-size: 50.5px;
+	font-weight: 600;
+	--minContent: 1070;
+	--hSizing: FILL;
+	--vSizing: HUG;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: MIN;
+}
+
+.column-text {
+	color: #bcd3de;
+	font-size: 19.59px;
+	font-weight: 400;
+	--minContent: 1070;
+	--hSizing: FILL;
+	--vSizing: HUG;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: MIN;
+}
+/* end column*/
+
+
+.lading-page-pagina-header1 {
+	top: 0; 
+	height: 777px;
+	background-image: linear-gradient(180deg, #031d35 6%, #07101c 98%);
+}
+
+.lading-page-pagina-circle {
+	position: absolute; top: 661px; right: -296px; 
+	box-shadow: 0px 0px 191.27px 114.76px rgba(0, 42, 60, 0.5);
+	width: 177px; height: 177px;
+	background: radial-gradient(
+		50% 50% at 50% 50%, 
+		rgba(0, 43, 61, 0.27) 33%, rgba(4, 51, 68, 0.5) 100%
+	) top left / auto auto no-repeat;
+	border-radius: 50%;
+	--minContent: 177;
+	--hSizing: FIXED;
+	--vSizing: FIXED;
+	--pConstraintHorizontal: MAX;
+	--pConstraintVertical: MIN;
+}
+
+.lading-page-pagina-rect1 {
+	top: 777px; 
+	height: 578px;
+	background-image: linear-gradient(180deg, #050e16 2%, #07101c 93%);
+}
+
+.lading-page-pagina-rect2 {
+	top: 1355px; 
+	height: 508px;
+	background-image: linear-gradient(180deg, #07101c 0%, #0b1a2e 56%, #0a1728 100%);
+}
+
+.lading-page-pagina-row1 {
+	position: absolute; top: 1863px; left: 0; right: 0; 
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	gap: 53px;
+	font-weight: 400;
+	text-align: left;
+	background: linear-gradient(180deg, #0a1729 0%, #07101c 50%, #0a1828 100%) top left / auto auto no-repeat;
+	padding: 155px 24px 234px 24px;
+	--minContent: 1203;
+	--hSizing: FILL;
+	--vSizing: HUG;
+	--pConstraintHorizontal: STRETCH;
+}
+
+
+
+/* card-a */
+
+.card-a {
+	width: 100%; height: 602px;
+	max-width: 351px;
+	display: flex;
+	flex-direction: column;
+	flex-shrink: 0;
+	background-color: #031d35;
+	padding-bottom: 85px;
+	border-radius: 14px;
+	--minContent: 351;
+	--hSizing: FIXED;
+	--vSizing: FIXED;
+	--pConstraintHorizontal: MIN;
+	--pConstraintVertical: MIN;
+}
+/* end card-a*/
+
+
+.card-left1 {
+	margin-left: -4px;
+	width: 100%; height: 602px;
+	max-width: 351px;
+	display: flex;
+	flex-direction: column;
+	gap: 1px;
+	flex-shrink: 0;
+	background-color: #031d35;
+	padding: 47px 0 182px 16px;
+	border-radius: 14px;
+	--minContent: 347;
+	--hSizing: FIXED;
+	--vSizing: FIXED;
+	--pConstraintHorizontal: MIN;
+	--pConstraintVertical: MIN;
+}
+
+.card-left-text1 {
+	margin-left: 23px;
+}
+
+.card-left-text2 {
+	margin-right: 37px;
+}
+
+.card1 {
+	gap: 21px;
+	padding-left: 21px;
+	padding-top: 43px;
+}
+
+.card1 .card-text-top {
+	margin-left: 18px;
+}
+
+.card1 .card-text-segmente-seus {
+	margin-right: 32px;
+}
+
+.card1 .card-btn-botao {
+	margin-left: -31px; margin-top: 45px;
+}
+
+.card-right {
+	gap: 16px;
+	padding-left: 26px;
+	padding-top: 39px;
+	padding-right: 21px;
+}
+
+.card-right .card-text-top {
+	margin-left: 13px;
+}
+
+.card-right .card-text-segmente-seus {
+	margin-right: 6px;
+}
+
+.card-right .card-btn-botao {
+	margin-left: -5px; margin-top: 58px;
+}
+
+.footer {
+	position: absolute; top: 5725px; left: 0; right: 0; 
+	display: flex;
+	flex-direction: column;
+	font-weight: 600;
+	background-color: #010817;
+	padding-top: 43px;
+	padding-bottom: 18px;
+	overflow: hidden;
+	--minContent: 1532;
+	--hSizing: FILL;
+	--vSizing: HUG;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: MIN;
+}
+
+.footer-col1 {
+	container: footer-col1 / inline-size;
+	margin-left: -6px;
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	--minContent: 1532;
+	--hSizing: FILL;
+	--vSizing: HUG;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: MIN;
+}
+
+.footer-row {
+	margin-left: 165px;
+	display: flex;
+	align-items: flex-start;
+	gap: 27px;
+	align-self: start;
+	color: #a5a5a5;
+	font-size: 14.53px;
+	text-align: left;
+	--minContent: 1215;
+	--hSizing: HUG;
+	--vSizing: HUG;
+	--pConstraintHorizontal: MIN;
+}
+
+.footer-col-left {
+	margin-top: 2px;
+	width: 292px;
+	display: flex;
+	flex-direction: column;
+	gap: 19px;
+	flex-shrink: 0;
+	--minContent: 292;
+	--hSizing: FIXED;
+	--vSizing: HUG;
+	--pConstraintHorizontal: MIN;
+	--pConstraintVertical: MIN;
+}
+
+.footer-logo {
+	width: 42px; height: 42px;
+	flex-shrink: 0;
+	align-self: start;
+	--minContent: 42;
+	--hSizing: FIXED;
+	--vSizing: FIXED;
+	--pConstraintHorizontal: MIN;
+	--pConstraintVertical: MIN;
+}
+
+.footer-text-simplificando {
+	min-height: 42px;
+	display: flex;
+	align-items: center;
+	flex-shrink: 0;
+	--minContent: 292;
+	--hSizing: FILL;
+	--vSizing: FIXED;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: MIN;
+}
+
+.footer-col2 {
+	width: 126px;
+	display: flex;
+	flex-direction: column;
+	gap: 11px;
+	flex-shrink: 0;
+	--minContent: 126;
+	--hSizing: FIXED;
+	--vSizing: HUG;
+	--pConstraintHorizontal: MIN;
+	--pConstraintVertical: MIN;
+}
+
+.footer-text2 {
+	margin-left: 2px; margin-right: 2px; margin-top: 6px;
+}
+
+.footer-text-planos {
+	margin-left: 2px; margin-right: 2px;
+}
+
+.footer-text-sobre {
+	margin-top: 3px;
+}
+
+.footer-col3 {
+	margin-left: 168px; margin-top: 1px;
+	width: 229px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	flex-shrink: 0;
+	--minContent: 397;
+	--hSizing: FIXED;
+	--vSizing: HUG;
+	--pConstraintHorizontal: MIN;
+	--pConstraintVertical: MIN;
+}
+
+.footer-text-email {
+	margin-top: 6px;
+}
+
+.footer-text-sao-paulo {
+	margin-top: 2px;
+}
+
+.footer-col-right {
+	margin-left: 64px;
+	width: 90px;
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	flex-shrink: 0;
+	color: #6bb2d0;
+	font-size: 19.44px;
+	--minContent: 154;
+	--hSizing: FIXED;
+	--vSizing: HUG;
+	--pConstraintHorizontal: MIN;
+	--pConstraintVertical: MIN;
+}
+
+.footer-text-siga-nos {
+	--minContent: 90;
+	--hSizing: FILL;
+	--vSizing: HUG;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: MIN;
+}
+
+.footer-row-bottom {
+	margin-right: 7px;
+	display: flex;
+	align-items: flex-start;
+	gap: 14px;
+	align-self: end;
+	--minContent: 58;
+	--hSizing: HUG;
+	--vSizing: HUG;
+	--pConstraintHorizontal: MAX;
+}
+
+.footer-img {
+	flex-shrink: 0;
+	--minContent: 17;
+	--hSizing: FIXED;
+	--vSizing: FIXED;
+	--pConstraintHorizontal: MIN;
+	--pConstraintVertical: MIN;
+}
+
+.footer-instagram {
+	margin-top: 1px;
+	width: 17px;
+}
+
+.footer-linkedin {
+	width: 20px;
+}
+
+.footer-line {
+	margin-top: 26px;
+	flex-shrink: 0;
+	border-top: 1px solid #777;
+}
+
+.footer-text-bottom {
+	margin: 0 24px;
+	color: #777;
+	font-size: 12.67px;
+	text-align: center;
+	--minContent: 1538;
+	--hSizing: FILL;
+	--vSizing: HUG;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: MIN;
+}
+
+.lading-page-pagina-col1 {
+	position: absolute; top: 5228px; left: 0; right: 0; 
+	display: flex;
+	flex-direction: column;
+	background-color: #031322;
+	padding: 94px 99px 94px 111px;
+	--minContent: 1532;
+	--hSizing: FILL;
+	--vSizing: HUG;
+	--pConstraintHorizontal: STRETCH;
+}
+
+.lading-page-pagina-col2 {
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+	background-color: #052442;
+	padding: 43px 23px 75px 23px;
+	border: 1px solid #297eb7;
+	border-radius: 26px;
+	--minContent: 1322;
+	--hSizing: FILL;
+	--vSizing: HUG;
+	--pConstraintHorizontal: STRETCH;
+}
+
+.lading-page-pagina-subtitle-faca-parte {
+	color: #94afca;
+	font-size: 39.28px;
+	font-weight: 700;
+	text-align: center;
+	--minContent: 1274;
+	--hSizing: FILL;
+	--vSizing: HUG;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: MIN;
+}
+
+.lading-page-pagina-col-bottom {
+	container: lading-page-pagina-col-bottom / inline-size;
+	margin-left: 209px; margin-right: 175px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 40px;
+	font-weight: 400;
+	text-align: left;
+	--minContent: 1274;
+	--hSizing: FILL;
+	--vSizing: HUG;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: MIN;
+}
+
+.lading-page-pagina-text-para-grandes {
+	width: 100%;
+	color: #a5a5a5;
+	font-size: 19px;
+	font-family: 'ABeeZee';
+	--minContent: 890;
+	--hSizing: FILL;
+	--vSizing: HUG;
+	--pConstraintHorizontal: SCALE;
+	--pConstraintVertical: MIN;
+}
+
+.lading-page-pagina-row-bottom1 {
+	margin-left: -66px;
+	display: flex;
+	align-items: flex-start;
+	gap: 32px;
+	color: #000;
+	font-size: 16.87px;
+	--minContent: 452;
+	--hSizing: HUG;
+	--vSizing: HUG;
+	--pConstraintHorizontal: CENTER;
+}
+
+.lading-page-pagina-btn-botao-fale-conosco {
+	width: 243px;
+	display: flex;
+	justify-content: center;
+	flex-shrink: 0;
+	font-style: normal;
+	letter-spacing: 0px;
+	text-align: center;
+	padding: 0 10px;
+	border-radius: 24.05px;
+	--minContent: 243;
+	--hSizing: FIXED;
+	--vSizing: HUG;
+	--pConstraintHorizontal: MIN;
+	--pConstraintVertical: MIN;
+}
+
+.lading-page-pagina-btn-botao1 {
+	margin-top: 1px;
+	background-color: #35a1ef;
+	padding-top: 8px;
+	padding-bottom: 10px;
+}
+
+.lading-page-pagina-btn-botao2 {
+	background-color: #88bef3;
+	padding-top: 11px;
+	padding-bottom: 7px;
+}
+
+.lading-page-pagina-group1 {
+	position: absolute; top: 4410px; left: 0; right: 0; 
+	height: 818px;
+	font-weight: 400;
+	background-color: #07101c;
+	--minContent: 0;
+	--hSizing: FILL;
+	--vSizing: FIXED;
+	--pConstraintHorizontal: STRETCH;
+}
+
+.lading-page-pagina-btn-botao3 {
+	position: absolute; top: 523px; left: 124px; 
+	align-self: unset;
+}
+
+.lading-page-pagina-nosso-app {
+	position: absolute; top: 138px; left: 124px; 
+	font-size: 67.42px;
+	font-weight: 700;
+	text-align: right;
+	background: linear-gradient(90deg, #66dafd 0%, #3eabf2 41%, #1b81e7 86%) top left / auto auto no-repeat;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	--minContent: 630;
+	--hSizing: HUG;
+	--vSizing: HUG;
+	--pConstraintHorizontal: MIN;
+	--pConstraintVertical: MIN;
+}
+
+.lading-page-pagina-text-a-calbon-nasceu {
+	position: absolute; top: 262px; left: 124px; right: 697px; 
+	color: #bcd3de;
+	font-size: 23.61px;
+	text-align: left;
+	--minContent: 711;
+	--hSizing: FILL;
+	--vSizing: HUG;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: MIN;
+}
+
+.lading-page-pagina-line {
+	position: absolute; top: 235px; left: 124px; 
+	width: calc(100% - 248px);
+	max-width: 637px;
+	border-top: 1px solid #3facf2;
+}
+
+.lading-page-pagina-group2 {
+	position: absolute; top: 52px; right: 78px; 
+	width: calc(100% - 156px); height: 730px;
+	max-width: 624px;
+	--minContent: 0;
+	--hSizing: FIXED;
+	--vSizing: FIXED;
+	--pConstraintHorizontal: MAX;
+	--pConstraintVertical: MIN;
+}
+
+.lading-page-pagina-graphic1 {
+	position: absolute; top: 181px; left: -3px; 
+	rotate: 118deg;
+	transform-origin: 50% 50%;
+	filter: blur(69px);
+	width: calc(100% - -6px); height: 368px;
+	max-width: 631px;
+	--minContent: 410;
+	--hSizing: FIXED;
+	--vSizing: FIXED;
+	--pConstraintHorizontal: MIN;
+	--pConstraintVertical: MIN;
+}
+
+.lading-page-pagina-design-sem {
+	position: absolute; top: 97px; left: 31px; 
+	rotate: 6deg;
+	transform-origin: 50% 50%;
+	width: calc(100% - 62px);
+	max-width: 563px;
+	--minContent: 366;
+	--hSizing: FIXED;
+	--vSizing: FIXED;
+	--pConstraintHorizontal: MIN;
+	--pConstraintVertical: MIN;
+}
+
+.lading-page-pagina-time {
+	position: absolute; top: 3237px; left: 0; right: 0; 
+	height: 1173px;
+	background: linear-gradient(180deg, #0a1829 0%, #07101c 100%) top left / auto auto no-repeat;
+	--minContent: 0;
+	--hSizing: FILL;
+	--vSizing: FIXED;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: MIN;
+}
+
+.lading-page-pagina-col3 {
+	container: lading-page-pagina-col3 / inline-size;
+	position: absolute; top: 91px; left: 251px; right: 219px; 
+	display: flex;
+	flex-direction: column;
+	gap: 3px;
+	font-family: 'Andika';
+	text-align: left;
+	--minContent: 1062;
+	--hSizing: FILL;
+	--vSizing: HUG;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: MIN;
+}
+
+.lading-page-pagina-row2 {
+	margin: 0 auto;
+	width: 90%;
+	max-width: 591px;
+	display: flex;
+	align-items: flex-start;
+	gap: 15px;
+	align-self: center;
+	color: #fff;
+	font-size: 53.02px;
+	font-weight: 700;
+	padding-left: 2px;
+	--minContent: 525;
+	--hSizing: FIXED;
+	--vSizing: HUG;
+	--pConstraintHorizontal: CENTER;
+	--pConstraintVertical: MIN;
+}
+
+.lading-page-pagina-subtitle-conheca-nossa {
+	--minContent: 376;
+	--hSizing: HUG;
+	--vSizing: HUG;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: MIN;
+}
+
+.lading-page-pagina-equipe {
+	flex-grow: 1;
+	background: linear-gradient(90deg, #67dbfe 0%, #44b2f3 41%, #2087e8 86%) top left / auto auto no-repeat;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	--minContent: 198;
+	--hSizing: FILL;
+	--vSizing: HUG;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: MIN;
+}
+
+.lading-page-pagina-text-conheca-a-equipe {
+	color: #aaa;
+	font-size: 18.88px;
+	font-weight: 400;
+	--minContent: 1062;
+	--hSizing: FILL;
+	--vSizing: HUG;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: MIN;
+}
+
+.lading-page-pagina-graphic2 {
+	position: absolute; top: 403px; left: 209px; 
+	width: 39px; height: 37px;
+	--minContent: 39;
+	--hSizing: FIXED;
+	--vSizing: FIXED;
+	--pConstraintHorizontal: MIN;
+	--pConstraintVertical: MIN;
+}
+
+.lading-page-pagina-graphic3 {
+	position: absolute; top: 732px; left: 214px; 
+	width: 39px; height: 37px;
+	--minContent: 39;
+	--hSizing: FIXED;
+	--vSizing: FIXED;
+	--pConstraintHorizontal: MIN;
+	--pConstraintVertical: MIN;
+}
+
+.lading-page-pagina-graphic4 {
+	position: absolute; top: 403px; right: 184px; 
+	width: 39px; height: 37px;
+	--minContent: 39;
+	--hSizing: FIXED;
+	--vSizing: FIXED;
+	--pConstraintHorizontal: MAX;
+	--pConstraintVertical: MIN;
+}
+
+.lading-page-pagina-graphic5 {
+	position: absolute; top: 732px; right: 190px; 
+	width: 39px; height: 37px;
+	--minContent: 39;
+	--hSizing: FIXED;
+	--vSizing: FIXED;
+	--pConstraintHorizontal: MAX;
+	--pConstraintVertical: MIN;
+}
+
+.lading-page-pagina-graphic6 {
+	position: absolute; top: 281px; left: 50%; 
+	translate: -50% 0;
+	margin-left: 5px;
+	width: calc(100% - 32px); height: 367px;
+	max-width: 1522px;
+	--minContent: 994;
+	--hSizing: FIXED;
+	--vSizing: FIXED;
+	--pConstraintHorizontal: CENTER;
+	--pConstraintVertical: MIN;
+}
+
+.lading-page-pagina-graphic7 {
+	position: absolute; top: 821px; left: 50%; 
+	translate: -50% 0;
+	margin-left: 5px;
+	width: calc(100% - 32px); height: 270px;
+	max-width: 1522px;
+	--minContent: 994;
+	--hSizing: FIXED;
+	--vSizing: FIXED;
+	--pConstraintHorizontal: CENTER;
+	--pConstraintVertical: MIN;
+}
+
+.lading-page-pagina-conteudo1 {
+	container: lading-page-pagina-conteudo1 / inline-size;
+	position: absolute; top: 329px; left: 342px; right: 289px; 
+	display: flex;
+	flex-direction: column;
+	font-family: 'Afacad';
+	text-align: center;
+	overflow: hidden;
+	--minContent: 805;
+	--hSizing: FILL;
+	--vSizing: HUG;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: MIN;
+}
+
+.lading-page-pagina-icones {
+	margin-right: -281px;
+	display: flex;
+	align-items: flex-start;
+	gap: 29px;
+	--minContent: 805;
+	--hSizing: FILL;
+	--vSizing: HUG;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: MIN;
+}
+
+.card-left2 {
+	flex-grow: 1;
+	padding-top: 32px;
+	padding-bottom: 58px;
+	--minContent: 273;
+	--hSizing: FILL;
+	--vSizing: FIXED;
+	--pConstraintVertical: MIN;
+}
+
+.card-left-img {
+	margin-left: -1px;
+	width: 90px;
+	flex-shrink: 0;
+	align-self: center;
+	border-radius: 53.31px;
+	--minContent: 89;
+	--hSizing: FIXED;
+	--vSizing: FIXED;
+	--pConstraintHorizontal: CENTER;
+	--pConstraintVertical: MIN;
+}
+
+.card-left-subtitle {
+	margin-top: 11px;
+}
+
+.card-left-text-bottom {
+	margin-top: 0;
+}
+
+.card2 {
+	flex-grow: 1;
+	padding-top: 29px;
+	--minContent: 274;
+	--hSizing: FILL;
+	--vSizing: FIXED;
+	--pConstraintVertical: MIN;
+}
+
+.card-img2 {
+	margin-left: 9px;
+	width: 89px;
+	flex-shrink: 0;
+	align-self: center;
+	border-radius: 51.31px;
+	--minContent: 97;
+	--hSizing: FIXED;
+	--vSizing: FIXED;
+	--pConstraintHorizontal: CENTER;
+	--pConstraintVertical: MIN;
+}
+
+.card3 {
+	flex-grow: 1;
+	padding-top: 27px;
+	--minContent: 273;
+	--hSizing: FILL;
+	--vSizing: FIXED;
+	--pConstraintVertical: MIN;
+}
+
+.card-img3 {
+	width: 89px;
+	flex-shrink: 0;
+	align-self: center;
+	border-radius: 70.1px;
+	--minContent: 88;
+	--hSizing: FIXED;
+	--vSizing: FIXED;
+	--pConstraintHorizontal: CENTER;
+	--pConstraintVertical: MIN;
+}
+
+.lading-page-pagina-rect-right1 {
+	box-shadow: 0px 5.42px 22.62px 2.32px #0b3545;
+	width: 100%; height: 245px;
+	flex-grow: 1;
+	background-color: #0a1727;
+	border-radius: 19.37px;
+	--minContent: 178;
+	--hSizing: FILL;
+	--vSizing: FIXED;
+	--pConstraintHorizontal: MIN;
+	--pConstraintVertical: MIN;
+}
+
+.lading-page-pagina-subtitle-2-ano {
+	position: absolute; top: 646px; left: 24px; right: 24px; 
+	text-align: center;
+	--minContent: 1484;
+	--hSizing: FILL;
+	--vSizing: HUG;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: MIN;
+}
+
+.lading-page-pagina-conteudo2 {
+	container: lading-page-pagina-conteudo2 / inline-size;
+	position: absolute; top: 702px; left: 344px; right: 289px; 
+	display: flex;
+	flex-direction: column;
+	font-family: 'Afacad';
+	text-align: center;
+	overflow: hidden;
+	--minContent: 804;
+	--hSizing: FILL;
+	--vSizing: HUG;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: MIN;
+}
+
+.lading-page-pagina-row3 {
+	margin-right: -286px;
+	display: flex;
+	align-items: flex-start;
+	gap: 32px;
+	--minContent: 804;
+	--hSizing: FILL;
+	--vSizing: HUG;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: MIN;
+}
+
+
+
+/* card-b */
+
+.card-b {
+	box-shadow: 0px 5.41px 22.56px 2.32px #0b3545;
+	width: 100%; height: 244px;
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+	background-color: #0a1727;
+	padding: 0 10px;
+	border-radius: 19.31px;
+	--minContent: 273;
+	--hSizing: FILL;
+	--vSizing: FIXED;
+	--pConstraintHorizontal: MIN;
+	--pConstraintVertical: MIN;
+}
+
+.card-img {
+	width: 97px;
+	flex-shrink: 0;
+	align-self: center;
+	border-radius: 50%;
+	--minContent: 107;
+	--hSizing: FIXED;
+	--vSizing: FIXED;
+	--pConstraintHorizontal: CENTER;
+	--pConstraintVertical: MIN;
+}
+/* end card-b*/
+
+
+.card-left3 {
+	padding-top: 25px;
+	padding-bottom: 59px;
+}
+
+.card-left3 .card-img {
+	margin-left: 10px;
+}
+
+.card4 {
+	box-shadow: 0px 5.41px 22.56px 2.32px #0b3545;
+	width: 100%; height: 244px;
+	display: flex;
+	flex-direction: column;
+	gap: 2px;
+	flex-grow: 1;
+	background-color: #0a1727;
+	padding: 26px 10px 59px 10px;
+	border-radius: 19.31px;
+	--minContent: 273;
+	--hSizing: FILL;
+	--vSizing: FIXED;
+	--pConstraintHorizontal: MIN;
+	--pConstraintVertical: MIN;
+}
+
+.card-img4 {
+	margin-left: -4px;
+	width: 97px;
+	flex-shrink: 0;
+	align-self: center;
+	border-radius: 240.44px;
+	--minContent: 93;
+	--hSizing: FIXED;
+	--vSizing: FIXED;
+	--pConstraintHorizontal: CENTER;
+	--pConstraintVertical: MIN;
+}
+
+.card-subtitle4 {
+	margin-top: 5px;
+}
+
+.card-text-bottom4 {
+	margin-top: 0;
+}
+
+.card5 {
+	padding-top: 28px;
+	padding-bottom: 56px;
+}
+
+.card5 .card-img {
+	margin-left: -10px;
+}
+
+.lading-page-pagina-rect-right2 {
+	box-shadow: 0px 5.41px 22.56px 2.32px #0b3545;
+	width: 100%; height: 244px;
+	flex-grow: 1;
+	background-color: #0a1727;
+	border-radius: 19.31px;
+	--minContent: 177;
+	--hSizing: FILL;
+	--vSizing: FIXED;
+	--pConstraintHorizontal: MIN;
+	--pConstraintVertical: MIN;
+}
+
+.lading-page-pagina-subtitle-1-ano {
+	position: absolute; top: 257px; left: 50%; 
+	translate: -50% 0;
+	margin-left: 14px;
+	width: max-content;
+	text-align: left;
+	--minContent: 98;
+	--hSizing: HUG;
+	--vSizing: HUG;
+	--pConstraintHorizontal: CENTER;
+	--pConstraintVertical: MIN;
+}
+
+.lading-page-pagina-col4 {
+	container: lading-page-pagina-col4 / inline-size;
+	position: absolute; top: 2854px; left: 0; right: 0; 
+	display: flex;
+	flex-direction: column;
+	gap: 18px;
+	text-align: left;
+	background: linear-gradient(90deg, #031d35 0%, #002f54 100%) top left / auto auto no-repeat;
+	padding: 112px 105px 111px 106px;
+	--minContent: 1532;
+	--hSizing: FILL;
+	--vSizing: HUG;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: MIN;
+}
+
+.lading-page-pagina-row-top1 {
+	display: flex;
+	align-items: flex-start;
+	gap: 319px;
+	align-self: start;
+	color: #fff;
+	font-size: 74.79px;
+	font-weight: 900;
+	--minContent: 1160;
+	--hSizing: HUG;
+	--vSizing: HUG;
+	--pConstraintHorizontal: MIN;
+}
+
+.lading-page-pagina-title {
+	--minContent: 161;
+	--hSizing: HUG;
+	--vSizing: HUG;
+	--pConstraintHorizontal: MIN;
+	--pConstraintVertical: MIN;
+}
+
+.lading-page-pagina-title2 {
+	margin-left: 39px;
+}
+
+.lading-page-pagina-row-bottom2 {
+	display: flex;
+	align-items: flex-start;
+	gap: 158px;
+	color: #c5c5c5;
+	font-size: 18.64px;
+	font-weight: 400;
+	--minContent: 1321;
+	--hSizing: FILL;
+	--vSizing: HUG;
+	--pConstraintHorizontal: STRETCH;
+}
+
+.lading-page-pagina-text-empresas-nao {
+	margin-top: 5px;
+	width: 100%;
+	flex-grow: 1;
+	--minContent: 322;
+	--hSizing: FILL;
+	--vSizing: HUG;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: MIN;
+}
+
+.lading-page-pagina-text-empresas-nao2 {
+	margin-left: 39px;
+}
+
+.lading-page-pagina-text-empresas-nao3 {
+	margin-top: 0;
+}
+
+.lading-page-pagina-col5 {
+	position: absolute; top: 0; left: 0; right: 0; 
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 106px;
+	background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #050e17 100%) top left / auto auto no-repeat, url(../assets/lading-page-pagina-col.png) top left / cover no-repeat;
+	padding: 46px 24px 229px 24px;
+	--minContent: 906;
+	--hSizing: FILL;
+	--vSizing: HUG;
+	--pConstraintHorizontal: STRETCH;
+}
+
+.lading-page-pagina-header2 {
+	display: flex;
+	align-items: flex-start;
+	gap: 56px;
+	font-size: 12.8px;
+	text-align: center;
+	background-color: #071527;
+	padding: 9px 33px 9px 73px;
+	border-radius: 30px;
+	--minContent: 664;
+	--hSizing: HUG;
+	--vSizing: HUG;
+	--pConstraintHorizontal: CENTER;
+	--pConstraintVertical: MIN;
+}
+
+.lading-page-pagina-logo {
+	width: 42px; height: 42px;
+	flex-shrink: 0;
+	--minContent: 42;
+	--hSizing: FIXED;
+	--vSizing: FIXED;
+	--pConstraintHorizontal: MIN;
+	--pConstraintVertical: MIN;
+}
+
+.lading-page-pagina-row4 {
+	margin-left: 32px; margin-top: 13px;
+	display: flex;
+	align-items: flex-start;
+	gap: 41px;
+	color: #fff;
+	font-weight: 600;
+	--minContent: 273;
+	--hSizing: HUG;
+	--vSizing: HUG;
+	--pConstraintHorizontal: MIN;
+	--pConstraintVertical: MIN;
+}
+
+.lading-page-pagina-text {
+	--minContent: 34;
+	--hSizing: HUG;
+	--vSizing: HUG;
+	--pConstraintHorizontal: MIN;
+	--pConstraintVertical: MIN;
+}
+
+.lading-page-pagina-text-eco-factory-active {
+	margin-left: 7px;
+	color: #76afb5;
+}
+
+.lading-page-pagina-btn-botao4 {
+	margin-top: 8px;
+	width: 131px;
+	display: flex;
+	justify-content: center;
+	flex-shrink: 0;
+	color: #1d1d1d;
+	font-style: normal;
+	font-weight: 700;
+	letter-spacing: 0px;
+	text-align: center;
+	background-color: #9ce9ff;
+	padding: 5px 8px 6px 8px;
+	border-radius: 13px;
+	--minContent: 131;
+	--hSizing: FIXED;
+	--vSizing: HUG;
+	--pConstraintHorizontal: MIN;
+	--pConstraintVertical: MIN;
+}
+
+.col-bottom {
+	margin-left: -212px;
+	max-width: 1070px;
+	gap: 70px;
+	text-align: left;
+}
+
+.col-bottom .column-subtitle {
+	margin-right: 404px;
+	color: #fff;
+}
+
+.col-bottom .column-text {
+	margin-left: 3px;
+}
+
+.lading-page-pagina-col6 {
+	container: lading-page-pagina-col6 / inline-size;
+	position: absolute; top: 838px; left: 109px; right: 86px; 
+	display: flex;
+	flex-direction: column;
+	gap: 127px;
+	text-align: left;
+	--minContent: 1227;
+	--hSizing: FILL;
+	--vSizing: HUG;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: MIN;
+}
+
+.lading-page-pagina-row-top2 {
+	margin-left: 89px;
+	display: flex;
+	align-items: flex-start;
+	gap: 172px;
+	--minContent: 875;
+	--hSizing: FILL;
+	--vSizing: HUG;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: MIN;
+}
+
+.lading-page-pagina-group-left {
+	position: relative;
+	width: 86%; height: 431px;
+	flex-grow: 1;
+	--minContent: 0;
+	--hSizing: FILL;
+	--vSizing: FIXED;
+	--pConstraintHorizontal: MIN;
+	--pConstraintVertical: MIN;
+}
+
+.lading-page-pagina-img1 {
+	position: absolute; top: 0; left: 0; 
+	width: calc(100% - 0px);
+	max-width: 384px;
+	border-radius: 186px;
+	--minContent: 250;
+	--hSizing: FIXED;
+	--vSizing: FIXED;
+	--pConstraintHorizontal: MIN;
+	--pConstraintVertical: MIN;
+}
+
+.lading-page-pagina-img2 {
+	position: absolute; top: 164px; right: 0; 
+	width: 279px;
+	border: 5px solid #08111e;
+	border-radius: 133.5px;
+	--minContent: 279;
+	--hSizing: FIXED;
+	--vSizing: FIXED;
+	--pConstraintHorizontal: MAX;
+	--pConstraintVertical: MIN;
+}
+
+.lading-page-pagina-col-right {
+	margin-top: 49px;
+	width: 114%;
+	display: flex;
+	flex-direction: column;
+	gap: 29px;
+	flex-grow: 1;
+	--minContent: 614;
+	--hSizing: FILL;
+	--vSizing: HUG;
+	--pConstraintHorizontal: MIN;
+	--pConstraintVertical: MIN;
+}
+
+.lading-page-pagina-subtitle-amenizar-o-efeito {
+	color: #60d3fb;
+	font-size: 50.5px;
+	font-weight: 600;
+	--minContent: 614;
+	--hSizing: FILL;
+	--vSizing: HUG;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: MIN;
+}
+
+.lading-page-pagina-text-o-co-e-um {
+	width: 100%;
+	max-width: 551px;
+	align-self: start;
+	color: #bcd3de;
+	font-size: 19.59px;
+	font-weight: 400;
+	--minContent: 551;
+	--hSizing: FIXED;
+	--vSizing: HUG;
+	--pConstraintHorizontal: MIN;
+	--pConstraintVertical: MIN;
+}
+
+.lading-page-pagina-row-bottom3 {
+	display: flex;
+	align-items: flex-start;
+	gap: 103px;
+	align-self: start;
+	--minContent: 1227;
+	--hSizing: HUG;
+	--vSizing: HUG;
+	--pConstraintHorizontal: MIN;
+}
+
+.col-left {
+	margin-top: 53px;
+	max-width: 614px;
+	gap: 29px;
+	flex-shrink: 0;
+}
+
+.col-left .column-subtitle {
+	color: #60d3fb;
+}
+
+.col-left .column-text {
+	width: 100%;
+	max-width: 551px;
+	align-self: start;
+}
+
+.lading-page-pagina-group-right {
+	position: relative;
+	width: 100%; height: 467px;
+	max-width: 510px;
+	flex-shrink: 0;
+	--minContent: 510;
+	--hSizing: FIXED;
+	--vSizing: FIXED;
+	--pConstraintHorizontal: MIN;
+	--pConstraintVertical: MIN;
+}
+
+.lading-page-pagina-img3 {
+	position: absolute; top: 0; right: 0; 
+	width: calc(100% - 0px);
+	max-width: 395px;
+	border-radius: 196.71px;
+	--minContent: 256;
+	--hSizing: FIXED;
+	--vSizing: FIXED;
+	--pConstraintHorizontal: MAX;
+	--pConstraintVertical: MIN;
+}
+
+.lading-page-pagina-img4 {
+	position: absolute; top: 178px; left: 0; 
+	width: 283px;
+	border: 6px solid #061424;
+	border-radius: 141.47px;
+	--minContent: 283;
+	--hSizing: FIXED;
+	--vSizing: FIXED;
+	--pConstraintHorizontal: MIN;
+	--pConstraintVertical: MIN;
+}
+
+
+
+/* container queries (flex rows) */
+
+@container lading-page-pagina (width < 1201px) {
+	.lading-page-pagina-row1 {
+		flex-direction: column;
+		align-items: stretch;
+		gap: 100px;
+	}
+	.lading-page-pagina-row1 > * {
+		margin-left: unset !important; margin-right: unset !important;
+	}
+	.lading-page-pagina-row1 > .card-left1 {
+		align-self: center;
+	}
+	.lading-page-pagina-row1 > .card1 {
+		align-self: center;
+	}
+	.lading-page-pagina-row1 > .card-right {
+		align-self: center;
+	}
+}
+
+@container footer-col1 (width < 1214px) {
+	.footer-row {
+		flex-direction: column;
+		align-items: stretch;
+		gap: 18px;
+	}
+	.footer-row > * {
+		margin-left: unset !important; margin-right: unset !important; margin-top: unset !important;
+	}
+	.footer-row > .footer-col-left {
+		align-self: center;
+	}
+	.footer-row > .footer-col2 {
+		align-self: center;
+	}
+	.footer-row > .footer-col3 {
+		align-self: center;
+	}
+	.footer-row > .footer-col-right {
+		align-self: center;
+	}
+}
+
+@container lading-page-pagina-col-bottom (width < 451px) {
+	.lading-page-pagina-row-bottom1 {
+		flex-direction: column;
+		align-items: center;
+		gap: 14px;
+	}
+	.lading-page-pagina-row-bottom1 > * {
+		margin-top: unset !important;
+		text-align: center;
+	}
+}
+
+@container lading-page-pagina-col3 (width < 523px) {
+	.lading-page-pagina-row2 {
+		flex-direction: column;
+		align-items: center;
+		gap: 16px;
+	}
+	.lading-page-pagina-row2 > * {
+		text-align: center;
+	}
+	.lading-page-pagina-row2 > .lading-page-pagina-equipe {
+		width: 100%;
+	}
+}
+
+@container lading-page-pagina-conteudo1 (width < 804px) {
+	.lading-page-pagina-icones {
+		flex-direction: column;
+		align-items: stretch;
+		gap: 30px;
+	}
+	.lading-page-pagina-icones > * {
+		margin-left: unset !important; margin-right: unset !important;
+	}
+	.lading-page-pagina-icones > .card-left2 {
+		width: 100%;
+	}
+	.lading-page-pagina-icones > .card2 {
+		width: 100%;
+	}
+	.lading-page-pagina-icones > .card3 {
+		width: 100%;
+	}
+	.lading-page-pagina-icones > .lading-page-pagina-rect-right1 {
+		width: 100%;
+	}
+}
+
+@container lading-page-pagina-conteudo2 (width < 803px) {
+	.lading-page-pagina-row3 {
+		flex-direction: column;
+		align-items: stretch;
+		gap: 30px;
+	}
+	.lading-page-pagina-row3 > * {
+		margin-left: unset !important; margin-right: unset !important;
+	}
+	.lading-page-pagina-row3 > .card-left3 {
+		width: 100%;
+	}
+	.lading-page-pagina-row3 > .card4 {
+		width: 100%;
+	}
+	.lading-page-pagina-row3 > .card5 {
+		width: 100%;
+	}
+	.lading-page-pagina-row3 > .lading-page-pagina-rect-right2 {
+		width: 100%;
+	}
+}
+
+@container lading-page-pagina-col4 (width < 1159px) {
+	.lading-page-pagina-row-top1 {
+		flex-direction: column;
+		align-items: center;
+		gap: 17px;
+	}
+	.lading-page-pagina-row-top1 > * {
+		margin-left: unset !important; margin-right: unset !important;
+		text-align: center;
+	}
+}
+
+@container lading-page-pagina-col4 (width < 1320px) {
+	.lading-page-pagina-row-bottom2 {
+		flex-direction: column;
+		align-items: center;
+		gap: 14px;
+	}
+	.lading-page-pagina-row-bottom2 > * {
+		margin-left: unset !important; margin-right: unset !important; margin-top: unset !important;
+		text-align: center;
+	}
+	.lading-page-pagina-row-bottom2 > .lading-page-pagina-text-empresas-nao1 {
+		width: 100%;
+	}
+	.lading-page-pagina-row-bottom2 > .lading-page-pagina-text-empresas-nao2 {
+		width: 100%;
+	}
+	.lading-page-pagina-row-bottom2 > .lading-page-pagina-text-empresas-nao3 {
+		width: 100%;
+	}
+}
+
+@container lading-page-pagina-col6 (width < 874px) {
+	.lading-page-pagina-row-top2 {
+		flex-direction: column;
+		align-items: center;
+		gap: 51px;
+	}
+	.lading-page-pagina-row-top2 > * {
+		margin-top: unset !important;
+	}
+	.lading-page-pagina-row-top2 > .lading-page-pagina-group-left {
+		width: 100%;
+	}
+	.lading-page-pagina-row-top2 > .lading-page-pagina-col-right {
+		width: 100%;
+	}
+}
+
+@container lading-page-pagina-col6 (width < 1226px) {
+	.lading-page-pagina-row-bottom3 {
+		flex-direction: column;
+		align-items: center;
+		gap: 55px;
+	}
+	.lading-page-pagina-row-bottom3 > * {
+		margin-top: unset !important;
+	}
+}
