@@ -747,105 +747,143 @@ section.funcionalidades {
   overflow: hidden;
 }
 
-.funcionalidades h2 {
+#func h2 {
   font-size: 4rem;
   margin-bottom: 20px;
   color: white;
 }
 
-.funcionalidades p {
+#func p {
+  margin: 0 auto; /* Centraliza horizontalmente */
   color: #b8c6dc;
-  margin-bottom: 60px;
   font-size: 1.05rem;
   max-width: 700px;
-  margin-inline: auto;
+  text-align: center;
+  margin-bottom: 60px;
 }
 
-/* BLOCO DE FUNCIONALIDADES */
-.bloco-funcionalidade {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  gap: 60px;
-  margin-bottom: 70px;
+/* ======== BLOCO FORMULÁRIO ======== */
+.bloco-formulario {
+  margin-top: 100px;
   position: relative;
-  z-index: 1;
-  transition: all 0.4s ease;
-}
-
-.imagem-funcionalidade {
-  width: 400px;
-  max-width: 45%;
-  border-radius: 25px;
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
-}
-
-.imagem-funcionalidade:hover {
-  transform: scale(1.03);
-}
-
-/* Conteúdo textual */
-.conteudo-funcionalidade {
-  max-width: 500px;
-  text-align: left;
-  animation: fadeInUp 1s ease forwards;
-}
-
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* Ícones da Cloudflare */
-.conteudo-funcionalidade h3::before {
-  content: url('https://www.cloudflare.com/img/icons/cloudflare-icon.svg');
-  /* ícone Cloudflare */
-  display: inline-block;
-  width: 22px;
-  height: 22px;
-  vertical-align: middle;
-  margin-right: 10px;
-  filter: invert(79%) sepia(69%) saturate(388%) hue-rotate(113deg) brightness(101%) contrast(94%);
-}
-
-.conteudo-funcionalidade h3 {
-  font-size: 1.4rem;
-  margin-bottom: 12px;
   display: flex;
   align-items: center;
-  gap: 10px;
-  color: #00eaff;
-  font-weight: 600;
+  justify-content: space-between;
+  background-image: url(/LandingPage/assets/fundo-func.svg);
+  border-radius: 40px;
+  padding: 40px 60px;
+  height: 320px;
+  overflow: visible;
+  box-shadow: 0px 15px 30px rgba(111, 43, 255, 0.3);
 }
 
-.conteudo-funcionalidade p {
-  color: #cdd7eb;
-  font-size: 1rem;
+.conteudo-formulario {
+  margin-left: 40px;
+  max-width: 50%;
+}
+
+.conteudo-formulario h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 16px;
+   width: 600px;
+}
+
+.conteudo-formulario p {
+  font-size: 1.05rem;
+  color: rgba(0, 0, 0, 0.85) !important;
   line-height: 1.7;
 }
 
+/* ======== BLOCO FUNCIONALIDADE ======== */
+.bloco-funcionalidade {
+  margin-top: 100px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-image: url(/LandingPage/assets/fundo-func.svg);
+  border-radius: 40px;
+  padding: 40px 60px;
+  height: 320px;
+  overflow: visible;
+  color: white;
+  box-shadow: 0px 15px 30px rgba(111, 43, 255, 0.3);
+}
 
-/* RESPONSIVIDADE */
-@media (max-width: 900px) {
-  .bloco-funcionalidade {
-    flex-direction: column;
+.conteudo-funcionalidade {
+  margin-left: 450px;
+  max-width: 50%;
+}
+
+.conteudo-funcionalidade h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 16px;
+  width: 600px;
+}
+
+.conteudo-funcionalidade p {
+  font-size: 1.05rem;
+  color: rgba(0, 0, 0, 0.85) !important;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+
+/* ======== IMAGENS ======== */
+.imagem-funcionalidade {
+  margin-left: 5px;
+  position: absolute;
+  width: 380px;
+  z-index: 2;
+  transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+.imagem-funcionalidade:hover {
+  transform: rotate(0deg) scale(1.02);
+  filter: drop-shadow(0px 25px 35px rgba(0, 0, 0, 0.4));
+}
+
+/* Específico para imagem do formulário */
+.formulario {
+  left: 800px;
+}
+
+/* ======== RESPONSIVO ======== */
+@media (max-width: 950px) {
+  .bloco-funcionalidade,
+  .bloco-formulario {
+    flex-direction: column-reverse;
     text-align: center;
+    height: auto;
+    padding: 30px;
   }
 
-  .conteudo-funcionalidade {
-    text-align: center;
+  .imagem-funcionalidade {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 260px;
+    transform: rotate(0);
+    margin-top: 40px;
   }
 
-  .conteudo-funcionalidade h3::before {
-    display: none;
+  .conteudo-funcionalidade,
+  .conteudo-formulario {
+    margin: 0;
+    max-width: 100%;
+  }
+
+  #func h2 {
+    font-size: 2.8rem;
+  }
+
+  #func p {
+    max-width: 90%;
+    margin: 0 auto 50px auto;
   }
 }
 
