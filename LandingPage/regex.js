@@ -1,64 +1,69 @@
-// regex.js
-export function validateEmail(email) {
-  const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  if (!email.trim()) return { valid: false, message: "O campo de e-mail é obrigatório." };
-  if (!regex.test(email)) return { valid: false, message: "Digite um e-mail válido (ex: exemplo@dominio.com)." };
-  return { valid: true, message: "" };
+// ================= REGEX DE VALIDAÇÃO (FUNÇÕES PURAS) =================
+const __regexTelefone = /^\(?\d{2}\)?\s?\d{4,5}-?\d{4}$/;
+const __regexSenha = /^(?=.[A-Z])(?=.[!#@$%&])(?=.\d)(?=.[a-z]).{6,15}$/;
+const __regexCPF = /^(?:\d{3}\.\d{3}\.\d{3}-\d{2}|\d{11})$/;
+const __regexEmail = /^(?:[a-z0-9!#$%&'+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'+/=?^_`{|}~-]+)|"(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])")@(?:(?:[a-z0-9](?:[a-z0-9-][a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-][a-z0-9])?|\[(?:(?:25[0-5]|2[0-4]\d|[01]?\d\d?)\.){3}(?:25[0-5]|2[0-4]\d|[01]?\d\d?|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+))]$/i;
+const __regexCNPJ = /^(\d{2}\.\d{3}\.\d{3}\/)\d{4}-\d{2}$/;
+
+function __result(valid, message) {
+	return { valid, message };
 }
 
-export function validatePassword(password) {
-  const regex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d@$!%*#?&]{6,}$/;
-  if (!password.trim()) return { valid: false, message: "A senha é obrigatória." };
-  if (!regex.test(password)) return { valid: false, message: "A senha deve ter ao menos 6 caracteres, com letras e números." };
-  return { valid: true, message: "" };
+function validateEmail(value) {
+	const v = String(value || '').trim();
+	if (!v) return __result(false, 'E-mail é obrigatório.');
+	if (!__regexEmail.test(v)) return __result(false, 'Informe um e-mail válido.');
+	return __result(true, '');
 }
 
-export function validateName(name) {
-  const regex = /^[A-Za-zÀ-ÿ\s]{3,}$/;
-  if (!name.trim()) return { valid: false, message: "O nome é obrigatório." };
-  if (!regex.test(name)) return { valid: false, message: "O nome deve conter apenas letras e ao menos 3 caracteres." };
-  return { valid: true, message: "" };
+function validatePassword(value) {
+	const v = String(value || '').trim();
+	if (!v) return __result(false, 'Senha é obrigatória.');
+	if (!__regexSenha.test(v)) return __result(false, 'A senha deve ter 6–15 caracteres, 1 maiúscula, 1 minúscula, 1 número e 1 símbolo (!#@$%&).');
+	return __result(true, '');
 }
 
-export function validateCNPJ(cnpj) {
-  const regex = /^\d{2}\.\d{3}\.\d{3}\/\d{4}-\d{2}$/;
-  if (!cnpj.trim()) return { valid: false, message: "O CNPJ é obrigatório." };
-  if (!regex.test(cnpj)) return { valid: false, message: "Formato inválido. Use: 00.000.000/0000-00." };
-  return { valid: true, message: "" };
+function validateName(value) {
+	const v = String(value || '').trim();
+	if (!v) return __result(false, 'Nome é obrigatório.');
+	if (v.length < 3) return __result(false, 'Informe pelo menos 3 caracteres.');
+	return __result(true, '');
 }
 
-export function validateCPF(cpf) {
-  const regex = /^\d{3}\.\d{3}\.\d{3}-\d{2}$/;
-  if (!cpf.trim()) return { valid: false, message: "O CPF é obrigatório." };
-  if (!regex.test(cpf)) return { valid: false, message: "Formato inválido. Use: 000.000.000-00." };
-  return { valid: true, message: "" };
+function validateCNPJ(value) {
+	const v = String(value || '').trim();
+	if (!v) return __result(false, 'CNPJ é obrigatório.');
+	if (!__regexCNPJ.test(v)) return __result(false, 'CNPJ inválido. Use o formato 00.000.000/0000-00.');
+	return __result(true, '');
 }
 
-export function validateTelefone(telefone) {
-  const regex = /^\(?\d{2}\)?\s?\d{4,5}-?\d{4}$/;
-  if (!telefone.trim()) return { valid: false, message: "O telefone é obrigatório." };
-  if (!regex.test(telefone)) return { valid: false, message: "Formato inválido. Use: (11) 99999-9999." };
-  return { valid: true, message: "" };
+function validateCPF(value) {
+	const v = String(value || '').trim();
+	if (!v) return __result(false, 'CPF é obrigatório.');
+	if (!__regexCPF.test(v)) return __result(false, 'CPF inválido.');
+	return __result(true, '');
 }
 
-export function validateEndereco(endereco) {
-  if (!endereco.trim()) return { valid: false, message: "O endereço é obrigatório." };
-  if (endereco.length < 5) return { valid: false, message: "Endereço muito curto." };
-  return { valid: true, message: "" };
+function validateTelefone(value) {
+	const v = String(value || '').trim();
+	if (!v) return __result(false, 'Telefone é obrigatório.');
+	if (!__regexTelefone.test(v)) return __result(false, 'Telefone inválido. Use o formato (11) 99999-9999.');
+	return __result(true, '');
 }
 
-// Função genérica para identificar o tipo de campo
-export function validateByType(input) {
-  const type = input.getAttribute('data-validate');
-  switch (type) {
-    case 'email': return validateEmail(input.value);
-    case 'password': return validatePassword(input.value);
-    case 'name': return validateName(input.value);
-    case 'cpf': return validateCPF(input.value);
-    case 'cnpj': return validateCNPJ(input.value);
-    case 'telefone': return validateTelefone(input.value);
-    case 'endereco': return validateEndereco(input.value);
-    default:
-      return { valid: input.value.trim() !== '', message: "Campo obrigatório." };
-  }
+function validateEndereco(value) {
+	const v = String(value || '').trim();
+	if (!v) return __result(false, 'Campo obrigatório.');
+	if (v.length < 2) return __result(false, 'Informe pelo menos 2 caracteres.');
+	return __result(true, '');
 }
+
+// Exposição global (sem listeners automáticos)
+window.validateEmail = validateEmail;
+window.validatePassword = validatePassword;
+window.validateName = validateName;
+window.validateCNPJ = validateCNPJ;
+window.validateCPF = validateCPF;
+window.validateTelefone = validateTelefone;
+window.validateEndereco = validateEndereco;
+window.__validationHelpers = { __result };
