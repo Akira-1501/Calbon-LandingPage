@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="PT-BR" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Novo Funcionário | Painel Administrativo</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
@@ -43,10 +43,10 @@
     </a>
   </aside>
 
-  <!---------------------------------------------------------- MAIN - FORMULÁRIO MODERNO -------------------------------------------------------->
+  <!---------------------------------------------------------- MAIN - FORMULÁRIO -------------------------------------------------------->
   <main>
     <!-- Área de mensagens -->
-    <div class="area-mensagens" aria-live="polite"></div>
+    <div class="area-mensagens"></div>
 
     <!-- Card do formulário -->
     <section class="formulario-funcionario">
@@ -59,20 +59,18 @@
         <a class="fechar" href="/AreaRestrita/inicio.html"> <i class="fas fa-times"></i></a>
       </div>
 
-      <form class="formulario" id="formEditarFuncionario">
-        <input type="hidden" id="funcionario_id" name="funcionario_id" />
-
+      <form class="formulario">
+        <input id="funcionario_id" name="funcionario_id" />
         <div class="grid-campos">
 
           <!-- Campo Nome -->
           <div class="campo">
-            <label for="nome" class="label">Nome Completo <span class="obrigatorio">*</span></label>
+            <label for="nome" class="label">Nome Completo <span class="obrigatorio"></span></label>
             <div class="input-container">
               <i class="fas fa-user icone-campo"></i>
-              <input type="text" id="nome" name="nome" class="input" required aria-required="true"
+              <input type="text" id="nome" name="nome" class="input"
                 placeholder="Digite o nome completo" />
             </div>
-            <div class="mensagem-erro" id="erro-nome"></div>
           </div>
 
           <!-- Campo E-mail -->
@@ -80,8 +78,8 @@
             <label for="email" class="label">E-mail <span class="obrigatorio">*</span></label>
             <div class="input-container">
               <i class="fas fa-envelope icone-campo"></i>
-              <input type="email" id="email" name="email" class="input" required aria-required="true"
-                placeholder="Digite o e-mail" readonly />
+              <input type="email" id="email" name="email" class="input" 
+                placeholder="Digite o e-mail" />
             </div>
             <div class="mensagem-erro" id="erro-email"></div>
           </div>
@@ -99,12 +97,11 @@
                 <option value="Digital Innovation">
               </datalist>
             </div>
-            <div class="mensagem-erro" id="erro-empresa"></div>
           </div>
 
           <!-- Campo Cargo -->
           <div class="campo">
-            <label for="cargo" class="label">Cargo <span class="obrigatorio">*</span></label>
+            <label for="cargo" class="label">Cargo</label>
             <div class="input-container">
               <i class="fas fa-briefcase icone-campo"></i>
               <input type="text" id="cargo" name="cargo" class="input" list="opcoesCargo"
@@ -129,7 +126,6 @@
                 <option value="DevOps Engineer">
               </datalist>
             </div>
-            <div class="mensagem-erro" id="erro-cargo"></div>
           </div>
 
           <!-- Campo Telefone -->
