@@ -1,18 +1,15 @@
-let empresaSelecionada = null;
 
-function abrirModalConfirmacao(id) {
-  empresaSelecionada = id;
-  document.getElementById('modalConfirmacao').style.display = 'block';
+function abrirModal() {
+  const modal = document.getElementById('modalConfirmacao');
+  modal.style.display = 'flex';
 }
 
-function fecharModalConfirmacao() {
-  document.getElementById('modalConfirmacao').style.display = 'none';
-  empresaSelecionada = null;
+function fecharModal() {
+  const modal = document.getElementById('modalConfirmacao');
+  modal.style.display = 'none';
 }
 
 function confirmarExclusao() {
-  if (empresaSelecionada !== null) {
-    excluirRegistroEmpresa(empresaSelecionada);
-    fecharModalConfirmacao();
-  }
+  fecharModal();
+  alert("Item excluído com sucesso!");
 }
