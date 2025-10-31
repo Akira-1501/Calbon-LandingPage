@@ -1,8 +1,9 @@
+
+/*--------------------------------------------------- HEADER - VIZUALIZAÇÃO -----------------------------------------*/
   main {
     margin-left: 200px;
   }
 
-  /*--------------------------------------------------- HEADER - VIZUALIZAÇÃO -----------------------------------------*/
   header {
     position: fixed;
     top: 0;
@@ -19,7 +20,6 @@
   .bem-vindo .subtitulo {
     font-size: 14px;
     color: #8d9aa6;
-    /* cinza clarinho */
     margin-bottom: 2px;
   }
 
@@ -27,7 +27,6 @@
     font-size: 22px;
     font-weight: 700;
     color: #ffffff;
-    /* preto quase puro */
     margin: 0;
   }
 

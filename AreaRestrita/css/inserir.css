@@ -12,17 +12,6 @@ a {
   text-decoration: none;
 }
 
-/*--------------------------------------------------- ÁREA DE MENSAGENS -----------------------------------------*/
-.formulario-empresa {
-  background: #0F1E32;
-  border-radius: 16px;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-  border: 1px solid #1a2a3a;
-  overflow: hidden;
-  animation: fadeInUp 0.6s ease-out;
-}
-
-
 /*--------------------------------------------------- CABEÇALHO DO FORMULÁRIO -----------------------------------------*/
 .cabecalho {
   background: linear-gradient(135deg, #1a3558, #2a4a6b);
@@ -74,7 +63,7 @@ a {
   transform: scale(1.1);
 }
 
-/*--------------------------------------------------- CARD DO FORMULÁRIO -----------------------------------------*/
+/*--------------------------------------------------- FORMULÁRIO -----------------------------------------*/
 .formulario-funcionario {
   background: #0F1E32;
   border-radius: 16px;
@@ -84,7 +73,6 @@ a {
   animation: fadeInUp 0.6s ease-out;
 }
 
-/*--------------------------------------------------- FORMULÁRIO -----------------------------------------*/
 .formulario {
   padding: 32px;
 }
@@ -226,7 +214,7 @@ option {
 }
 
 
-/* ===== INPUTS COM ÍCONES ===== */
+/* ------- INPUTS COM ÍCONES ---------- */
 .input-container {
   position: relative;
   display: flex;
@@ -262,5 +250,3 @@ option {
   border-color: #00baff;
   box-shadow: 0 0 8px rgba(0, 186, 255, 0.4);
 }
-
-/*--------------------------------------------------- ANIMAÇÕES -----------------------------------------*/
