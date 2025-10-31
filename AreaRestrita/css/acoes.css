@@ -1,7 +1,6 @@
 /* Fundo do modal */
 .modal {
     display: none;
-    /* escondido por padrão */
     position: fixed;
     top: 0;
     left: 0;
@@ -13,7 +12,6 @@
     z-index: 999;
 }
 
-/* Caixa do modal */
 .conteudo {
     background: #2b4159;
     padding: 30px 40px;
@@ -71,7 +69,6 @@
     background: #dc2626;
 }
 
-/* Botão padrão para abrir modal */
 .btn-excluir,
 .viz-funcionario {
     padding: 10px;
@@ -103,7 +100,3 @@
     justify-content: center;
 }
 
-
-.hidden {
-    display: none !important;
-}
