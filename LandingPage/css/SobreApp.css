@@ -128,62 +128,6 @@ a {
   transition: transform 0.3s;
 }
 
-/* .franqueza {
-  border: 2px solid #a80011;
-  background-color: #D5202A;
-  width: 200px;
-  padding: 15px;
-  border-radius: 15px;
-}
-
-.disciplina {
-  border: 2px solid #ff7b00;
-  background-color: #ef933b;
-  width: 200px;
-  padding: 15px;
-  border-radius: 15px;
-}
-
-.determinacao {
-  border: 2px solid #4a8f36;
-  background-color: #79AB5C;
-  width: 200px;
-  padding: 15px;
-  border-radius: 15px;
-}
-
-.simplicidade {
-  border: 2px solid #1a804a;
-  background-color: #46A261;
-  width: 200px;
-  padding: 15px;
-  border-radius: 15px;
-}
-
-.humildade {
-  border: 2px solid #0b6fa4;
-  background-color: #1B9BC7;
-  width: 200px;
-  padding: 15px;
-  border-radius: 15px;
-}
-
-.disponibilidade {
-  border: 2px solid #e04b1a;
-  background-color: #e86339;
-  width: 200px;
-  padding: 15px;
-  border-radius: 15px;
-}
-
-.atitude-dono {
-  border: 2px solid #75c8f1;
-  background-color: #A5CDE1;
-  width: 250px;
-  padding: 15px;
-  border-radius: 15px;
-} */
-
 /* /---------------------------------------------- PLANOS ----------------------------------------------------/ */
 
 .planos {
@@ -336,8 +280,6 @@ a {
   box-shadow: 0 0 15px rgba(0, 134, 212, 0.3);
 }
 
-
-
 /* MISSÃO */
 .mission {
   text-align: center;
@@ -348,81 +290,6 @@ span {
   background: linear-gradient(80deg, #6adfff, #1479e5) !important;
   background-clip: text !important;
   color: transparent;
-}
-
-/* ===== SEÇÃO FUNCIONALIDADES BANCÁRIAS (INSPIRADA NO BANKING) ===== */
-.secao-funcionalidades-bancarias {
-  background-color: #0d0c34;
-  padding: 0;
-  margin: 0;
-  position: relative;
-  overflow: hidden;
-}
-
-
-.cabecalho-funcionalidades {
-  background: transparent;
-  padding: 80px 0 60px 0;
-  position: relative;
-  z-index: 1;
-}
-
-.titulo-funcionalidades {
-  font-size: 3.5rem;
-  color: #ffffff;
-  font-weight: 700;
-  text-align: center;
-  margin: 0;
-  line-height: 1.2;
-}
-
-.container-cards-bancarios {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  padding: 0 20px 80px 20px;
-  flex-wrap: wrap;
-  position: relative;
-  z-index: 1;
-}
-
-.card-funcionalidade-bancaria {
-  background: rgb(11, 206, 255);
-  border-radius: 20px;
-  padding: 30px 25px;
-  text-align: center;
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  max-width: 320px;
-  flex: 1;
-  min-width: 280px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-}
-
-.card-funcionalidade-bancaria:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
-}
-
-.titulo-card-bancario {
-  font-size: 1.2rem;
-  color: #333333;
-  font-weight: 600;
-  margin-bottom: 25px;
-  line-height: 1.3;
-  text-align: center;
-  padding: 0 10px;
-}
-
-
-.imagem-smartphone {
-  width: 100%;
-  height: auto;
-  display: block;
-  border-radius: 20px;
 }
 
 /* ===== SEÇÃO BEM-ESTAR MENTAL (INSPIRADA NO CLEARMIND YOGA) ===== */
@@ -765,7 +632,7 @@ section.funcionalidades {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-image: url(/Calbon-LandingPage/LandingPage/assets/Design\ sem\ nome\ \(3\).svg);
+  background-image: url(/LandingPage/assets/fundo-func.svg);
   border-radius: 40px;
   padding: 40px 60px;
   height: 320px;
@@ -799,7 +666,7 @@ section.funcionalidades {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-image: url(/Calbon-LandingPage/LandingPage/assets/Design\ sem\ nome\ \(3\).svg);
+  background-image: url(/LandingPage/assets/fundo-func.svg);
   border-radius: 40px;
   padding: 40px 60px;
   height: 320px;
