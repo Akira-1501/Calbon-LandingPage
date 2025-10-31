@@ -7,7 +7,7 @@
   <title>Funcionários | Painel Administrativo</title>
   <link rel="stylesheet" href="/AreaRestrita/css/layout.css" />
   <link rel="stylesheet" href="/AreaRestrita/css/visualizar-empresa.css" />
-  <link rel="stylesheet" href="/AreaRestrita/css/modal-confirmacao.css" />
+  <link rel="stylesheet" href="/AreaRestrita/css/acoes.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <link rel="icon" href="/AreaRestrita/img/icone-logo.ico" type="image/icon" />
 </head>
@@ -92,21 +92,11 @@
             <td>SP</td>
             <td>
               <div class="acoes-linha">
-                <button type="submit" class="botao-excluir" onclick="excluirRegistroEmpresa(1)" title="Excluir empresa">
+                <button class="btn-excluir" onclick="abrirModal()">
                   <i class="fas fa-trash"></i>
                 </button>
-                <button type="submit" class="botao-salvar hidden" onclick="salvarEdicaoEmpresa(1)"
-                  title="Salvar alterações">
-                  <i class="fas fa-save"></i>
-                </button>
-                <button type="submit" class="botao-cancelar hidden" onclick="cancelarEdicaoEmpresa(1)"
-                  title="Cancelar edição">
-                  <i class="fas fa-times"></i>
-                </button>
-                <button type="submit" class="botao-viz-funcionario">
-                  <a href="/AreaRestrita/visualizar-funcionario.html" class="botao-visualizar" title="Ver funcionários">
-                    <i class="fas fa-users"></i>
-                  </a>
+                <button class="viz-funcionario" onclick="abrirModal()">
+                  <i class="fas fa-users"></i>
                 </button>
               </div>
             </td>
@@ -120,14 +110,11 @@
             <td>SP</td>
             <td>
               <div class="acoes-linha">
-                <button type="button" class="botao-excluir" onclick="abrirModalConfirmacao(2)" title="Excluir empresa">
+                <button class="btn-excluir" onclick="abrirModal()">
                   <i class="fas fa-trash"></i>
                 </button>
-
-                <button type="submit" class="botao-viz-funcionario">
-                  <a href="/AreaRestrita/visualizar-funcionario.html" class="botao-visualizar" title="Ver funcionários">
-                    <i class="fas fa-users"></i>
-                  </a>
+                <button class="viz-funcionario" onclick="abrirModal()">
+                  <i class="fas fa-users"></i>
                 </button>
               </div>
             </td>
@@ -150,23 +137,16 @@
       <div class="controles-paginacao" id="controlesPag"></div>
     </div>
 
-    <!-- Toast -->
-    <div id="toast" class="toast hidden">
-      <img id="toastIcon" src="" alt="">
-      <span id="toastMsg"></span>
-    </div>
-
     <div id="modalConfirmacao" class="modal">
-      <div class="modal-conteudo">
-        <p>Tem certeza de que deseja excluir esta empresa?</p>
-        <div class="botoes-modal">
-          <button class="cancelar" onclick="fecharModalConfirmacao()">Cancelar</button>
+      <div class="conteudo">
+        <h2>Confirmar exclusão</h2>
+        <p>Tem certeza que deseja excluir este item? Esta ação não pode ser desfeita.</p>
+        <div class="botoes">
+          <button class="cancelar" onclick="fecharModal()">Cancelar</button>
           <button class="confirmar" onclick="confirmarExclusao()">Excluir</button>
         </div>
       </div>
     </div>
-
-
   </main>
   <!-- JS da página -->
   <script src="/AreaRestrita/js/sidebar-navigation.js"></script>

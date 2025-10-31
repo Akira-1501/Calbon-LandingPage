@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Funcionários | Painel Administrativo</title>
   <link rel="stylesheet" href="/AreaRestrita/css/layout.css" />
-  <link rel="stylesheet" href="/AreaRestrita/css/modal-confirmacao.css">
+  <link rel="stylesheet" href="/AreaRestrita/css/acoes.css">
   <link rel="stylesheet" href="/AreaRestrita/css/visualizar-empresa.css">
   <link rel="stylesheet" href="/AreaRestrita/css/visualizar-funcionario.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
@@ -89,8 +89,7 @@
             <td>RJ</td>
             <td>
               <div class="acoes-linha">
-                <button type="submit" class="botao-excluir" onclick="excluirRegistroFuncionario(1)"
-                  title="Excluir funcionário">
+                <button class="btn-excluir" onclick="abrirModal()">
                   <i class="fas fa-trash"></i>
                 </button>
               </div>
@@ -106,8 +105,7 @@
             <td>SP</td>
             <td>
               <div class="acoes-linha">
-                <button type="submit" class="botao-excluir" onclick="excluirRegistroFuncionario(2)"
-                  title="Excluir funcionário">
+                <button class="btn-excluir" onclick="abrirModal()">
                   <i class="fas fa-trash"></i>
                 </button>
               </div>
@@ -134,11 +132,10 @@
 
     <!-- Modal de confirmação de exclusão -->
     <div id="modalConfirmacao" class="modal">
-      <div class="modal-conteudo">
+      <div class="conteudo">
         <p>Tem certeza de que deseja excluir esta empresa?</p>
         <div class="botoes-modal">
-          <button class="cancelar" onclick="fecharModalConfirmacao()">Cancelar</button>
-          <button class="confirmar" onclick="confirmarExclusao()">Excluir</button>
+          <button class="btn-excluir" onclick="abrirModal()">Excluir registro</button>
         </div>
       </div>
     </div>
