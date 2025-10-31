@@ -141,7 +141,8 @@ option {
   border-top: 1px solid #374151;
 }
 
-.botao-salvar, .botao-cancelar {
+.botao-salvar,
+.botao-cancelar {
   display: flex;
   align-items: center;
   gap: 8px;
@@ -231,7 +232,8 @@ option {
   pointer-events: none;
 }
 
-.input, .select {
+.input,
+.select {
   width: 100%;
   padding: 20px 20px 15px 50px;
   background: #15263a;
@@ -243,7 +245,8 @@ option {
   outline: none;
 }
 
-.input, .select::placeholder {
+.input,
+.select::placeholder {
   color: #6c7a8f;
 }
 
