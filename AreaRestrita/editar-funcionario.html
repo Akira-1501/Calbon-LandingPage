@@ -118,7 +118,7 @@
             <div class="input-container">
               <i class="fas fa-envelope icone-campo"></i>
               <input type="email" id="email" name="email" class="input" required aria-required="true"
-                placeholder="Digite o e-mail"/>
+                placeholder="Digite o e-mail" />
             </div>
             <div class="mensagem-erro" id="erro-email"></div>
           </div>
@@ -133,7 +133,7 @@
             <div class="mensagem-erro" id="erro-telefone"></div>
           </div>
 
-          <!-- Campo Empresa convertido em datalist -->
+          <!-- Campo Empresa -->
           <div class="campo">
             <label for="empresa" class="label">Empresa</label>
             <div class="input-container">
@@ -148,6 +148,57 @@
               <option value="Digital Innovation">
             </datalist>
           </div>
+
+          <!-- Campo Setor -->
+          <div class="campo">
+            <label for="gestor" class="label">É gestor?</label>
+            <div class="input-container">
+              <i class="fas fa-briefcase icone-campo"></i>
+              <input type="text" id="gestor" name="gestor" class="input" placeholder="É gestor?" required
+                aria-required="true" list="lista-gestor">
+              <datalist id="lista-gestor">
+                <option value="Sim">
+                <option value="Não">
+              </datalist>
+            </div>
+          </div>
+
+            <!-- Setor -->
+            <div class="campo">
+              <label for="setor" class="label">Setor</label>
+              <div class="input-container">
+                <i class="fas fa-briefcase icone-campo"></i>
+                <input type="text" id="setor" name="setor" class="input" list="opcoesSetor"
+                  placeholder="Selecione o setor" required aria-required="true">
+
+                <datalist id="opcoesSetor">
+                  <option value="Administrativo">
+                  <option value="Financeiro">
+                  <option value="Recursos Humanos (RH)">
+                  <option value="Comercial">
+                  <option value="Marketing">
+                  <option value="Vendas">
+                  <option value="Logística">
+                  <option value="Compras">
+                  <option value="Tecnologia da Informação (TI)">
+                  <option value="Desenvolvimento de Software">
+                  <option value="Infraestrutura">
+                  <option value="Segurança da Informação">
+                  <option value="Suporte Técnico">
+                  <option value="Jurídico">
+                  <option value="Engenharia">
+                  <option value="Produção">
+                  <option value="Qualidade">
+                  <option value="Atendimento ao Cliente">
+                  <option value="Serviços Gerais">
+                  <option value="Planejamento Estratégico">
+                  <option value="Pesquisa e Desenvolvimento (P&D)">
+                  <option value="Operações">
+                  <option value="Treinamento e Desenvolvimento">
+                  <option value="Gestão de Projetos">
+                </datalist>
+              </div>
+            </div>
 
           <!-- Campo Senha -->
           <div class="campo">

@@ -66,7 +66,7 @@
             <div class="input-container">
               <i class="fas fa-tags icone-campo"></i>
               <input type="text" id="categoriaEmpresa" name="categoriaEmpresa" class="input"
-                placeholder="Escolha uma das categorias abaixo" list="opcoesCategoria" required>
+                placeholder="Selecione a categoria" list="opcoesCategoria" required>
             </div>
             <datalist id="opcoesCategoria">
               <option value="Agricultura">
@@ -189,6 +189,44 @@
               <option value="Empresas de Capital Aberto (S/A)">
             </datalist>
           </div>
+
+            <!-- Setor -->
+            <div class="campo">
+              <label for="setor" class="label">Setor</label>
+              <div class="input-container">
+                <i class="fas fa-briefcase icone-campo"></i>
+                <input type="text" id="setor" name="setor" class="input" list="opcoesSetor"
+                  placeholder="Selecione o setor" required aria-required="true">
+
+                <datalist id="opcoesSetor">
+                  <option value="Administrativo">
+                  <option value="Financeiro">
+                  <option value="Recursos Humanos (RH)">
+                  <option value="Comercial">
+                  <option value="Marketing">
+                  <option value="Vendas">
+                  <option value="Logística">
+                  <option value="Compras">
+                  <option value="Tecnologia da Informação (TI)">
+                  <option value="Desenvolvimento de Software">
+                  <option value="Infraestrutura">
+                  <option value="Segurança da Informação">
+                  <option value="Suporte Técnico">
+                  <option value="Jurídico">
+                  <option value="Engenharia">
+                  <option value="Produção">
+                  <option value="Qualidade">
+                  <option value="Atendimento ao Cliente">
+                  <option value="Serviços Gerais">
+                  <option value="Planejamento Estratégico">
+                  <option value="Pesquisa e Desenvolvimento (P&D)">
+                  <option value="Operações">
+                  <option value="Treinamento e Desenvolvimento">
+                  <option value="Gestão de Projetos">
+                </datalist>
+              </div>
+            </div>
+
 
           <div class="campo">
             <label for="porteEmpresa" class="label">Porte da Empresa</label>
