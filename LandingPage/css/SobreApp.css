@@ -347,8 +347,6 @@ span {
   width: 300px;
 }
 
-/* ===== SEÇÃO MISSÃO ===== */
-
 
 
 
@@ -471,39 +469,6 @@ span {
 }
 
 
-/* ======== SEÇÃO SOBRE ======== */
-section.sobre {
-  padding: 60px 5%;
-  margin: 0 auto;
-  width: 100%;
-  max-width: 900px;
-  border-radius: 20px;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 50px;
-  text-align: center;
-  color: #fff;
-}
-
-.sobre h2 {
-  font-size: 3.5rem;
-  margin: 0;
-}
-
-.sobre p {
-  color: #f0f8ff;
-  max-width: 750px;
-  margin: 5px auto 0 auto;
-  font-size: 1.1rem;
-}
-
-.span-calbon {
-  background: linear-gradient(80deg, #060b29, #062d6f);
-  background-clip: text;
-  color: transparent;
-}
 
 /* ------------------------------------------ MISSÃO -----------------------------------*/
 .missao {
@@ -750,67 +715,7 @@ section.funcionalidades {
   }
 }
 
-/* ======== SEÇÃO SOBRE ======== */
-section.sobre {
-  padding: 20px 5%;
-  margin: 0 auto;
-  border-radius: 20px;
-  display: flex;
-  align-items: center;
-  gap: 50px;
-  text-align: center;
-}
 
-.sobre h2 {
-  font-size: 4rem;
-  margin: 0;
-  padding: 0;
-}
-
-.sobre p {
-  color: #cfcfcf;
-  max-width: 750px;
-  margin: 5px auto 0 auto;
-}
-
-.span-calbon {
-  background: linear-gradient(80deg, #060b29, #062d6f) !important;
-  background-clip: text !important;
-  color: transparent;
-}
-
-.cards-sobre {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  margin-top: 10px;
-
-}
-
-.card {
-  margin-top: 10px;
-  background: #08072a;
-  border-radius: 20px;
-  box-shadow: 13px 13px rgb(11, 95, 125);
-  padding: 20px;
-  width: 300px;
-  transition: transform 0.3s ease;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-}
-
-.card h3 {
-  color: #fefeff;
-  margin-bottom: 10px;
-}
-
-.card p {
-  color: #c5c5c5;
-  font-size: 0.95rem;
-  line-height: 1.5;
-}
 
 /* ======== SEÇÃO INVESTIR ======== */
 .investir {
