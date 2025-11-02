@@ -753,6 +753,62 @@ span {
 }
 
 
+
+/* ===== SEÇÃO BEM-ESTAR MENTAL (INSPIRADA NO CLEARMIND YOGA) ===== */
+.secao-bem-estar {
+  background: linear-gradient(90deg, #10b7ca, rgb(0, 140, 255));
+  padding: 10px 5%;
+  margin: 0 auto;
+  width: 1300px;
+  border-radius: 20px;
+}
+
+.equilibrio {
+  background: #061b2d !important;
+  background-clip: text !important;
+  color: transparent;
+}
+
+.conteudo-bem-estar {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.texto-bem-estar {
+  flex: 1;
+  min-width: 300px;
+}
+
+.titulo-bem-estar {
+  font-size: 3rem;
+  color: #ffffff;
+  font-weight: 700;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.descricao-bem-estar {
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+.mockup-app {
+  z-index: 99;
+  flex: 1;
+  min-width: 300px;
+  text-align: center;
+}
+
+.imagem-app {
+  width: 300px;
+}
+
 /*-------------------------------------------------- Media Query --------------------------------------------------------*/
 
 /* Media Query para deixar o site responsivo */
