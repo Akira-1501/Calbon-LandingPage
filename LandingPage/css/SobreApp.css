@@ -23,6 +23,8 @@ a {
 
 /* ====== SEÇÃO PRINCIPAL ====== */
 .main-content {
+  background: radial-gradient(ellipse at top left, #3ab4f21a 0%, transparent 50%),
+  radial-gradient(ellipse at bottom right, #3ab4f214 0%, transparent 50%);
   display: flex;
   align-items: center;
   justify-content: center;
